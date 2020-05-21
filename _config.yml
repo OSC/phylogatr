@@ -24,7 +24,7 @@ callout: |
 cite: | # line breaks preserved
   This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under grant number [1910623](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910623)
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/phylogatr" # the subpath of your site, e.g. /blog
 url: "https://phylogatr.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: OSC
 
