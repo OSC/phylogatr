@@ -31,8 +31,8 @@ More than 40,000 phylogeographic investigations have been published to date, eac
 
 ## Project Team
 
-- Bryan Carstens
-- Tara Pelletier
+- [Bryan Carstens](https://carstenslab.osu.edu/index.html)
+- [Tara Pelletier](https://sites.google.com/site/taraapelletier/)
 - Sydney Decker
 - Danielle Parsons
 - Eric Franz
