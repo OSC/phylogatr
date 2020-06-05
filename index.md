@@ -5,23 +5,24 @@
 layout: default
 ---
 
-# Phylogatr
-
-## About
+## About Phylogatr
 
 Phylogatr brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or ShinyR apps provided by the Phylogatr team. Phylogatr supports both professional biologists and educational modules intended for secondary or college classes.
 
 
 ## Teacher Resources
 
-TODO
+We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of Phylogatr data through R Shiny applications and include documentation for educators to facilitate use in the classroom and ensure learning objectives are met.  
 
 ## Publications
 
-| Date  | Title  | Link |
+| Date  | Author  | Title |
 | :----:  | :-----:  | :------: |
-| 2020-10-10 | Some paper | [Link to some paper](#)
+| 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566)
+| 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382)
 
+**The suggested citation for Phylogatr is:**
+>Coming soon
 
 ## How Phylogatr works
 
@@ -41,4 +42,4 @@ More than 40,000 phylogeographic investigations have been published to date, eac
 
 ## Contact
 
-TODO
+You can submit a question about Phylogatr or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45). The Phylogatr team can be contacted at ***(insert support email here)***.
