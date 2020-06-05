@@ -12,7 +12,7 @@ Phylogatr brings together genetic data with georeferenced specimen records. Anal
 
 ## Teacher Resources
 
-We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of Phylogatr data through R Shiny applications and include documentation for educators to facilitate use in the classroom and ensure learning objectives are met.  
+We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of Phylogatr data through R Shiny applications and include documentation for educators to facilitate classroom use and ensure specific learning objectives are met.  
 
 ## Publications
 
