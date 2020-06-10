@@ -18,8 +18,7 @@ title: Phylogatr
 email: your-email@example.com
 logo: /assets/images/logo.png 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an **awesome** description for your new site here. You can edit this
-  line in _config.yml.
+  **phylo**geographic data aggre**ga**tion and **r**epurposing 
 callout: |
   Beta testing is now available by invitation only. [Launch Beta App](https://app.phylogatr.org)
 cite: | # line breaks preserved
