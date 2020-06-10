@@ -5,9 +5,9 @@
 layout: default
 ---
 
-## About Phylogatr
+## About PhylogatR
 
-Phylogatr brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or ShinyR apps provided by the Phylogatr team. Phylogatr supports both professional biologists and educational modules intended for secondary or college classes.
+PhylogatR brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or ShinyR apps provided by the Phylogatr team. PhylogatR supports both professional biologists and educational modules intended for secondary or college classes.
 
 
 ## Teacher Resources
@@ -21,12 +21,12 @@ We are currently developing educational modules for use in secondary and college
 | 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566)
 | 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382)
 
-**The suggested citation for Phylogatr is:**
+**The suggested citation for PhylogatR is:**
 >Coming soon
 
-## How Phylogatr works
+## How PhylogatR works
 
-Patterns of genetic diversity within species contain information about the history of the species, including how it responded to historical climate change and the degree of isolation of its populations. For this reason, thousands of scientific projects have been funded by federal agencies with the goal of investigating the genetic diversity within a particular focal species. The data from these efforts, including the genetic data collected from a given specimen and the physical location from which that specimen was collected, are a valuable resource and typically are made available to other researchers upon publication of the study. However, since different types of data are stored in different databases, it can be difficult to access and assemble these data for reanalysis. Phylogatr is a database and web application that (i) aggregates genetic sequence data from GenBank and geographic occurrence data from the Global Biodiversity Information Facility (GBIF), (ii) connects these data at the specimen level, and (iii) provides customized web-based apps that enable these data to be analyzed in a variety of ways. 
+Patterns of genetic diversity within species contain information about the history of the species, including how it responded to historical climate change and the degree of isolation of its populations. For this reason, thousands of scientific projects have been funded by federal agencies with the goal of investigating the genetic diversity within a particular focal species. The data from these efforts, including the genetic data collected from a given specimen and the physical location from which that specimen was collected, are a valuable resource and typically are made available to other researchers upon publication of the study. However, since different types of data are stored in different databases, it can be difficult to access and assemble these data for reanalysis. PhylogatR is a database and web application that (i) aggregates genetic sequence data from GenBank and geographic occurrence data from the Global Biodiversity Information Facility (GBIF), (ii) connects these data at the specimen level, and (iii) provides customized web-based apps that enable these data to be analyzed in a variety of ways. 
 
 ## Project Team
 
@@ -40,4 +40,4 @@ Patterns of genetic diversity within species contain information about the histo
 
 ## Contact
 
-You can submit a question about Phylogatr or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45). The Phylogatr team can be contacted at ***(insert support email here)***.
+You can submit a question about PhylogatR or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45). The Phylogatr team can be contacted at ***(insert support email here)***.
