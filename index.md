@@ -37,6 +37,7 @@ Patterns of genetic diversity within species contain information about the histo
 - Eric Franz
 - Shameema Ookital
 - Trey Dockendorf
+- Samir Mansour
 
 ## Contact
 
