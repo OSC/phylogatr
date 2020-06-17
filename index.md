@@ -41,4 +41,4 @@ Patterns of genetic diversity within species contain information about the histo
 
 ## Contact
 
-You can submit a question about PhylogatR or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45). The Phylogatr team can be contacted at ***(insert support email here)***.
+You can submit a question about PhylogatR or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45).
