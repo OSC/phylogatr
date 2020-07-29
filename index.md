@@ -14,12 +14,21 @@ PhylogatR brings together genetic data with georeferenced specimen records. Anal
 
 We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of Phylogatr data through ShinyR applications and include documentation for educators to facilitate classroom use and ensure specific learning objectives are met.  
 
+You can access current drafts of these modules here: 
+
+| Module  | Purpose  | Link |
+| :----:  | :-----:  | :------: |
+| Checking Your Data | Purpose | [Checking Your Data](assets/modules/Checking_Your_Data) |
+| Spatial Genetic Structure | Purpose | [Spatial Genetic Structure](assets/modules/Checking_Your_Data) |
+| Genetic Diversity | Purpose | [Genetic Diversity](assets/modules/Checking_Your_Data) |
+
+
 ## Publications
 
 | Date  | Author  | Title |
 | :----:  | :-----:  | :------: |
-| 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566)
-| 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382)
+| 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566) |
+| 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382) |
 
 **The suggested citation for PhylogatR is:**
 >Coming soon
