@@ -7,12 +7,12 @@ layout: default
 
 ## About PhylogatR
 
-PhylogatR brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or ShinyR apps provided by the Phylogatr team. PhylogatR supports both professional biologists and educational modules intended for secondary or college classes.
+PhylogatR brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the PhylogatR team. PhylogatR supports both professional biologists and educational modules intended for secondary or college classes.
 
 
 ## Teacher Resources
 
-We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of Phylogatr data through ShinyR applications and include documentation for educators to facilitate classroom use and ensure specific learning objectives are met.  
+We are currently developing educational modules for use in secondary and college level classes. Modules will support interactive analysis of PhylogatR data through R Shiny applications and include documentation for educators to facilitate classroom use and ensure specific learning objectives are met.  
 
 You can access working drafts of these modules below.
 
@@ -34,7 +34,7 @@ You can access working drafts of these modules below.
 **The suggested citation for PhylogatR is:**
 >Coming soon
 
-## How PhylogatR works
+## How PhylogatR Works
 
 Patterns of genetic diversity within species contain information about the history of the species, including how it responded to historical climate change and the degree of isolation of its populations. For this reason, thousands of scientific projects have been funded by federal agencies with the goal of investigating the genetic diversity within a particular focal species. The data from these efforts, including the genetic data collected from a given specimen and the physical location from which that specimen was collected, are a valuable resource and typically are made available to other researchers upon publication of the study. However, since different types of data are stored in different databases, it can be difficult to access and assemble these data for reanalysis. PhylogatR is a database and web application that (i) aggregates genetic sequence data from GenBank and geographic occurrence data from the Global Biodiversity Information Facility (GBIF), (ii) connects these data at the specimen level, and (iii) provides customized web-based apps that enable these data to be analyzed in a variety of ways. 
 
