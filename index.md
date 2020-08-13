@@ -9,6 +9,7 @@ layout: default
 
 PhylogatR brings together genetic data with georeferenced specimen records. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the PhylogatR team. PhylogatR supports both professional biologists and educational modules intended for secondary or college classes.
 
+**We are now accepting applications for PhylogatR beta-testers. Serving as a beta-tester will give you access to the full database for at least 6 months before it is released to the public, cool swag, and the opportunity to participate in an in-person workshop (once conferences are in-person again). If you are interested in becoming a beta-tester, please fill out this [form](https://docs.google.com/forms/d/109sF-e9WIdsSY57ZBx41ckMB9IK2AHW5_b5PjZJhTEg/edit).**
 
 ## Teacher Resources
 
