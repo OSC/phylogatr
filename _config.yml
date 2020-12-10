@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 callout: |
   Beta testing is now available by invitation only. [Launch Beta App](https://phylogatr.osc.edu)
 cite: | # line breaks preserved
-  This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under grant number [1910623](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910623)
+  This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under grant numbers [1910623](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910623) and [1911293](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1911293&HistoricalAwards=false)
 
 url: "https://phylogatr.org" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: OSC
