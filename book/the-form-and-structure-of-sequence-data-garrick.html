@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 The form and structure of sequence data (Garrick) | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 The form and structure of sequence data (Garrick) | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 The form and structure of sequence data (Garrick) | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="list of people" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> R and RStudio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html"><i class="fa fa-check"></i><b>3</b> The form and structure of sequence data (Garrick)</a><ul>
+<li class="chapter" data-level="3.1" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#dna-amino-acids-make-proteins"><i class="fa fa-check"></i><b>3.1</b> DNA &amp; amino acids make proteins</a></li>
+<li class="chapter" data-level="3.2" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#snps"><i class="fa fa-check"></i><b>3.2</b> SNPs</a></li>
+<li class="chapter" data-level="3.3" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#synonymous-vs.-nonsynonymous-variation"><i class="fa fa-check"></i><b>3.3</b> synonymous vs. nonsynonymous variation</a></li>
+<li class="chapter" data-level="3.4" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#organellar-genomes-mitochondria-chloroplast"><i class="fa fa-check"></i><b>3.4</b> organellar genomes (mitochondria / chloroplast)</a></li>
+<li class="chapter" data-level="3.5" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#barcoding-genes"><i class="fa fa-check"></i><b>3.5</b> barcoding genes</a></li>
+<li class="chapter" data-level="3.6" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#functions-of-common-barcoding-genes"><i class="fa fa-check"></i><b>3.6</b> functions of common barcoding genes</a></li>
+<li class="chapter" data-level="3.7" data-path="the-form-and-structure-of-sequence-data-garrick.html"><a href="the-form-and-structure-of-sequence-data-garrick.html#examples"><i class="fa fa-check"></i><b>3.7</b> examples?</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" alt="PhylogatR" style="width:75.0%" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-form-and-structure-of-sequence-data-garrick" class="section level1">
+<h1><span class="header-section-number">3</span> The form and structure of sequence data (Garrick)</h1>
+<div id="dna-amino-acids-make-proteins" class="section level2">
+<h2><span class="header-section-number">3.1</span> DNA &amp; amino acids make proteins</h2>
+</div>
+<div id="snps" class="section level2">
+<h2><span class="header-section-number">3.2</span> SNPs</h2>
+</div>
+<div id="synonymous-vs.-nonsynonymous-variation" class="section level2">
+<h2><span class="header-section-number">3.3</span> synonymous vs. nonsynonymous variation</h2>
+</div>
+<div id="organellar-genomes-mitochondria-chloroplast" class="section level2">
+<h2><span class="header-section-number">3.4</span> organellar genomes (mitochondria / chloroplast)</h2>
+</div>
+<div id="barcoding-genes" class="section level2">
+<h2><span class="header-section-number">3.5</span> barcoding genes</h2>
+</div>
+<div id="functions-of-common-barcoding-genes" class="section level2">
+<h2><span class="header-section-number">3.6</span> functions of common barcoding genes</h2>
+</div>
+<div id="examples" class="section level2">
+<h2><span class="header-section-number">3.7</span> examples?</h2>
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

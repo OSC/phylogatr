@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 Species limits | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 Species limits | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 Species limits | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="list of people" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="phylogeny-inference.html"/>
+<link rel="next" href="species-distribution-modeling.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.1.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html"><i class="fa fa-check"></i><b>3</b> The form and structure of sequence data</a><ul>
+<li class="chapter" data-level="3.1" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#dna-amino-acids-make-proteins"><i class="fa fa-check"></i><b>3.1</b> DNA &amp; amino acids make proteins</a></li>
+<li class="chapter" data-level="3.2" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#snps"><i class="fa fa-check"></i><b>3.2</b> SNPs</a></li>
+<li class="chapter" data-level="3.3" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#synonymous-vs.-nonsynonymous-variation"><i class="fa fa-check"></i><b>3.3</b> synonymous vs. nonsynonymous variation</a></li>
+<li class="chapter" data-level="3.4" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#organellar-genomes-mitochondria-chloroplast"><i class="fa fa-check"></i><b>3.4</b> organellar genomes (mitochondria / chloroplast)</a></li>
+<li class="chapter" data-level="3.5" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#barcoding-genes"><i class="fa fa-check"></i><b>3.5</b> barcoding genes</a></li>
+<li class="chapter" data-level="3.6" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#functions-of-common-barcoding-genes"><i class="fa fa-check"></i><b>3.6</b> functions of common barcoding genes</a></li>
+<li class="chapter" data-level="3.7" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#examples"><i class="fa fa-check"></i><b>3.7</b> examples?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html"><i class="fa fa-check"></i><b>4</b> Biodiversity Databases</a><ul>
+<li class="chapter" data-level="4.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#global-biodiversity-information-facility-gbif"><i class="fa fa-check"></i><b>4.1</b> Global Biodiversity Information Facility (GBIF)</a></li>
+<li class="chapter" data-level="4.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#genbank"><i class="fa fa-check"></i><b>4.2</b> GenBank</a></li>
+<li class="chapter" data-level="4.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#phylogatr"><i class="fa fa-check"></i><b>4.3</b> PhylogatR</a></li>
+<li class="chapter" data-level="4.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#using-pylogatr"><i class="fa fa-check"></i><b>4.4</b> Using PylogatR</a></li>
+<li class="chapter" data-level="4.5" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#practice"><i class="fa fa-check"></i><b>4.5</b> Practice</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#data-checking-and-cleaning"><i class="fa fa-check"></i><b>4.5.1</b> Data checking and cleaning</a></li>
+<li class="chapter" data-level="4.5.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#outliers"><i class="fa fa-check"></i><b>4.5.2</b> Outliers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html"><i class="fa fa-check"></i><b>5</b> Genetic diversity measures</a><ul>
+<li class="chapter" data-level="5.1" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#difference"><i class="fa fa-check"></i><b>5.1</b> % difference</a></li>
+<li class="chapter" data-level="5.2" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#model-corrected-difference-modeling-dna-variation"><i class="fa fa-check"></i><b>5.2</b> model corrected difference (modeling DNA variation)</a></li>
+<li class="chapter" data-level="5.3" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#summary-statistics-pi-thetah-d-s"><i class="fa fa-check"></i><b>5.3</b> summary statistics (pi, thetaH, D, S)</a></li>
+<li class="chapter" data-level="5.4" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#genetic-diversity-over-geographic-space-pie-charts"><i class="fa fa-check"></i><b>5.4</b> genetic diversity over geographic space pie charts</a></li>
+<li class="chapter" data-level="5.5" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#practice-1"><i class="fa fa-check"></i><b>5.5</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html"><i class="fa fa-check"></i><b>6</b> Population genetic structure</a><ul>
+<li class="chapter" data-level="6.1" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-drift-and-population-size"><i class="fa fa-check"></i><b>6.1</b> genetic drift and population size</a></li>
+<li class="chapter" data-level="6.2" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#clustering-methods"><i class="fa fa-check"></i><b>6.2</b> clustering methods</a></li>
+<li class="chapter" data-level="6.3" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-distance-geography"><i class="fa fa-check"></i><b>6.3</b> genetic isolation by distance (geography)</a></li>
+<li class="chapter" data-level="6.4" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-environment-temperature-precipitation"><i class="fa fa-check"></i><b>6.4</b> genetic isolation by environment (temperature, precipitation)</a></li>
+<li class="chapter" data-level="6.5" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-resistance"><i class="fa fa-check"></i><b>6.5</b> genetic isolation by resistance</a></li>
+<li class="chapter" data-level="6.6" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#monmoniers-algorithm-and-phylogeographic-breaks"><i class="fa fa-check"></i><b>6.6</b> Monmonier's algorithm and phylogeographic breaks</a></li>
+<li class="chapter" data-level="6.7" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#examples-phylogeographic-breaks-in-flying-vertebrates"><i class="fa fa-check"></i><b>6.7</b> examples, phylogeographic breaks in flying vertebrates</a></li>
+<li class="chapter" data-level="6.8" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#practice-2"><i class="fa fa-check"></i><b>6.8</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="historical-demography.html"><a href="historical-demography.html"><i class="fa fa-check"></i><b>7</b> Historical demography</a><ul>
+<li class="chapter" data-level="7.1" data-path="historical-demography.html"><a href="historical-demography.html#demographic-bottlenecks"><i class="fa fa-check"></i><b>7.1</b> demographic bottlenecks</a></li>
+<li class="chapter" data-level="7.2" data-path="historical-demography.html"><a href="historical-demography.html#simple-tests-for-genetic-bottlenecks"><i class="fa fa-check"></i><b>7.2</b> simple tests for genetic bottlenecks</a></li>
+<li class="chapter" data-level="7.3" data-path="historical-demography.html"><a href="historical-demography.html#demographic-expansion"><i class="fa fa-check"></i><b>7.3</b> demographic expansion</a></li>
+<li class="chapter" data-level="7.4" data-path="historical-demography.html"><a href="historical-demography.html#simple-tests-for-demographic-expansion-tajimas-d"><i class="fa fa-check"></i><b>7.4</b> simple tests for demographic expansion (Tajima's D)</a></li>
+<li class="chapter" data-level="7.5" data-path="historical-demography.html"><a href="historical-demography.html#simulation-testing-using-abc"><i class="fa fa-check"></i><b>7.5</b> simulation testing using ABC</a></li>
+<li class="chapter" data-level="7.6" data-path="historical-demography.html"><a href="historical-demography.html#example-from-pnw-salamanders"><i class="fa fa-check"></i><b>7.6</b> example from PNW salamanders</a></li>
+<li class="chapter" data-level="7.7" data-path="historical-demography.html"><a href="historical-demography.html#practice-3"><i class="fa fa-check"></i><b>7.7</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html"><i class="fa fa-check"></i><b>8</b> Phylogeny inference</a><ul>
+<li class="chapter" data-level="8.1" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#what-are-phylogenies"><i class="fa fa-check"></i><b>8.1</b> what are phylogenies?</a></li>
+<li class="chapter" data-level="8.2" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#gene-trees-and-species-trees"><i class="fa fa-check"></i><b>8.2</b> gene trees and species trees</a></li>
+<li class="chapter" data-level="8.3" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#inference-with-distance-methods"><i class="fa fa-check"></i><b>8.3</b> inference with distance methods</a></li>
+<li class="chapter" data-level="8.4" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#modeling-dna-variation"><i class="fa fa-check"></i><b>8.4</b> modeling DNA variation</a></li>
+<li class="chapter" data-level="8.5" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#inference-with-statistical-methods"><i class="fa fa-check"></i><b>8.5</b> inference with statistical methods</a></li>
+<li class="chapter" data-level="8.6" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#example-from-tamias-chipmunks"><i class="fa fa-check"></i><b>8.6</b> example from Tamias chipmunks</a></li>
+<li class="chapter" data-level="8.7" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#practice-4"><i class="fa fa-check"></i><b>8.7</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="species-limits.html"><a href="species-limits.html"><i class="fa fa-check"></i><b>9</b> Species limits</a><ul>
+<li class="chapter" data-level="9.1" data-path="species-limits.html"><a href="species-limits.html#cryptic-genetic-diversity"><i class="fa fa-check"></i><b>9.1</b> cryptic genetic diversity</a></li>
+<li class="chapter" data-level="9.2" data-path="species-limits.html"><a href="species-limits.html#clustering-methods-revisited"><i class="fa fa-check"></i><b>9.2</b> clustering methods revisited</a></li>
+<li class="chapter" data-level="9.3" data-path="species-limits.html"><a href="species-limits.html#abgd"><i class="fa fa-check"></i><b>9.3</b> ABGD</a></li>
+<li class="chapter" data-level="9.4" data-path="species-limits.html"><a href="species-limits.html#gmyc"><i class="fa fa-check"></i><b>9.4</b> GMYC</a></li>
+<li class="chapter" data-level="9.5" data-path="species-limits.html"><a href="species-limits.html#example-cryptic-diversity-in-sorex"><i class="fa fa-check"></i><b>9.5</b> example, cryptic diversity in Sorex</a></li>
+<li class="chapter" data-level="9.6" data-path="species-limits.html"><a href="species-limits.html#practice-5"><i class="fa fa-check"></i><b>9.6</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html"><i class="fa fa-check"></i><b>10</b> Species distribution modeling</a><ul>
+<li class="chapter" data-level="10.1" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#fundamental-vs.-realized-niches"><i class="fa fa-check"></i><b>10.1</b> fundamental vs. realized niches</a></li>
+<li class="chapter" data-level="10.2" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#climatic-variables"><i class="fa fa-check"></i><b>10.2</b> climatic variables</a></li>
+<li class="chapter" data-level="10.3" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#estimating-sdms-methods"><i class="fa fa-check"></i><b>10.3</b> estimating SDMs, methods</a></li>
+<li class="chapter" data-level="10.4" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#estimating-sdms-ensemble-approaches"><i class="fa fa-check"></i><b>10.4</b> estimating SDMs, ensemble approaches</a></li>
+<li class="chapter" data-level="10.5" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#hindcasting-sdms"><i class="fa fa-check"></i><b>10.5</b> hindcasting SDMs</a></li>
+<li class="chapter" data-level="10.6" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#forecasting-sdms"><i class="fa fa-check"></i><b>10.6</b> forecasting SDMs</a></li>
+<li class="chapter" data-level="10.7" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#example-sdms-for-pwn-slugs"><i class="fa fa-check"></i><b>10.7</b> example, SDMs for PWN slugs</a></li>
+<li class="chapter" data-level="10.8" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#practice-6"><i class="fa fa-check"></i><b>10.8</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html"><i class="fa fa-check"></i><b>11</b> Predictive Phylogeography</a><ul>
+<li class="chapter" data-level="11.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#trait-data-response-variables"><i class="fa fa-check"></i><b>11.1</b> trait data &amp; response variables</a></li>
+<li class="chapter" data-level="11.2" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#regression-based-approaches"><i class="fa fa-check"></i><b>11.2</b> regression-based approaches</a></li>
+<li class="chapter" data-level="11.3" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#random-forest-and-machine-learning"><i class="fa fa-check"></i><b>11.3</b> random forest and machine learning</a></li>
+<li class="chapter" data-level="11.4" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#example-predicting-cryptic-diversity-espindola-et-al.-2016"><i class="fa fa-check"></i><b>11.4</b> example, predicting cryptic diversity (Espindola et al. 2016)</a></li>
+<li class="chapter" data-level="11.5" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#example-predicting-genetic-isolation-by-distance-pelletier-2018"><i class="fa fa-check"></i><b>11.5</b> example, predicting genetic isolation by distance (Pelletier 2018)</a></li>
+<li class="chapter" data-level="11.6" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#practice-7"><i class="fa fa-check"></i><b>11.6</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="conservation-genetics.html"><a href="conservation-genetics.html"><i class="fa fa-check"></i><b>12</b> Conservation genetics</a><ul>
+<li class="chapter" data-level="12.1" data-path="conservation-genetics.html"><a href="conservation-genetics.html#subtopics"><i class="fa fa-check"></i><b>12.1</b> subtopics</a></li>
+<li class="chapter" data-level="12.2" data-path="conservation-genetics.html"><a href="conservation-genetics.html#practice-8"><i class="fa fa-check"></i><b>12.2</b> Practice</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" alt="PhylogatR" style="width:75.0%" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="species-limits" class="section level1">
+<h1><span class="header-section-number">9</span> Species limits</h1>
+<div id="cryptic-genetic-diversity" class="section level2">
+<h2><span class="header-section-number">9.1</span> cryptic genetic diversity</h2>
+</div>
+<div id="clustering-methods-revisited" class="section level2">
+<h2><span class="header-section-number">9.2</span> clustering methods revisited</h2>
+</div>
+<div id="abgd" class="section level2">
+<h2><span class="header-section-number">9.3</span> ABGD</h2>
+</div>
+<div id="gmyc" class="section level2">
+<h2><span class="header-section-number">9.4</span> GMYC</h2>
+</div>
+<div id="example-cryptic-diversity-in-sorex" class="section level2">
+<h2><span class="header-section-number">9.5</span> example, cryptic diversity in Sorex</h2>
+</div>
+<div id="practice-5" class="section level2">
+<h2><span class="header-section-number">9.6</span> practice</h2>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="phylogeny-inference.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="species-distribution-modeling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

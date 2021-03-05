@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Biodiversity Databases | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Biodiversity Databases | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Biodiversity Databases | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="list of people" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="the-form-and-structure-of-sequence-data.html"/>
+<link rel="next" href="genetic-diversity-measures.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.1.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a><ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html"><i class="fa fa-check"></i><b>3</b> The form and structure of sequence data</a><ul>
+<li class="chapter" data-level="3.1" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#dna-amino-acids-make-proteins"><i class="fa fa-check"></i><b>3.1</b> DNA &amp; amino acids make proteins</a></li>
+<li class="chapter" data-level="3.2" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#snps"><i class="fa fa-check"></i><b>3.2</b> SNPs</a></li>
+<li class="chapter" data-level="3.3" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#synonymous-vs.-nonsynonymous-variation"><i class="fa fa-check"></i><b>3.3</b> synonymous vs. nonsynonymous variation</a></li>
+<li class="chapter" data-level="3.4" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#organellar-genomes-mitochondria-chloroplast"><i class="fa fa-check"></i><b>3.4</b> organellar genomes (mitochondria / chloroplast)</a></li>
+<li class="chapter" data-level="3.5" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#barcoding-genes"><i class="fa fa-check"></i><b>3.5</b> barcoding genes</a></li>
+<li class="chapter" data-level="3.6" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#functions-of-common-barcoding-genes"><i class="fa fa-check"></i><b>3.6</b> functions of common barcoding genes</a></li>
+<li class="chapter" data-level="3.7" data-path="the-form-and-structure-of-sequence-data.html"><a href="the-form-and-structure-of-sequence-data.html#examples"><i class="fa fa-check"></i><b>3.7</b> examples?</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html"><i class="fa fa-check"></i><b>4</b> Biodiversity Databases</a><ul>
+<li class="chapter" data-level="4.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#global-biodiversity-information-facility-gbif"><i class="fa fa-check"></i><b>4.1</b> Global Biodiversity Information Facility (GBIF)</a></li>
+<li class="chapter" data-level="4.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#genbank"><i class="fa fa-check"></i><b>4.2</b> GenBank</a></li>
+<li class="chapter" data-level="4.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#phylogatr"><i class="fa fa-check"></i><b>4.3</b> PhylogatR</a></li>
+<li class="chapter" data-level="4.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#using-pylogatr"><i class="fa fa-check"></i><b>4.4</b> Using PylogatR</a></li>
+<li class="chapter" data-level="4.5" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#practice"><i class="fa fa-check"></i><b>4.5</b> Practice</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#data-checking-and-cleaning"><i class="fa fa-check"></i><b>4.5.1</b> Data checking and cleaning</a></li>
+<li class="chapter" data-level="4.5.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#outliers"><i class="fa fa-check"></i><b>4.5.2</b> Outliers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html"><i class="fa fa-check"></i><b>5</b> Genetic diversity measures</a><ul>
+<li class="chapter" data-level="5.1" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#difference"><i class="fa fa-check"></i><b>5.1</b> % difference</a></li>
+<li class="chapter" data-level="5.2" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#model-corrected-difference-modeling-dna-variation"><i class="fa fa-check"></i><b>5.2</b> model corrected difference (modeling DNA variation)</a></li>
+<li class="chapter" data-level="5.3" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#summary-statistics-pi-thetah-d-s"><i class="fa fa-check"></i><b>5.3</b> summary statistics (pi, thetaH, D, S)</a></li>
+<li class="chapter" data-level="5.4" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#genetic-diversity-over-geographic-space-pie-charts"><i class="fa fa-check"></i><b>5.4</b> genetic diversity over geographic space pie charts</a></li>
+<li class="chapter" data-level="5.5" data-path="genetic-diversity-measures.html"><a href="genetic-diversity-measures.html#practice-1"><i class="fa fa-check"></i><b>5.5</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html"><i class="fa fa-check"></i><b>6</b> Population genetic structure</a><ul>
+<li class="chapter" data-level="6.1" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-drift-and-population-size"><i class="fa fa-check"></i><b>6.1</b> genetic drift and population size</a></li>
+<li class="chapter" data-level="6.2" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#clustering-methods"><i class="fa fa-check"></i><b>6.2</b> clustering methods</a></li>
+<li class="chapter" data-level="6.3" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-distance-geography"><i class="fa fa-check"></i><b>6.3</b> genetic isolation by distance (geography)</a></li>
+<li class="chapter" data-level="6.4" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-environment-temperature-precipitation"><i class="fa fa-check"></i><b>6.4</b> genetic isolation by environment (temperature, precipitation)</a></li>
+<li class="chapter" data-level="6.5" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#genetic-isolation-by-resistance"><i class="fa fa-check"></i><b>6.5</b> genetic isolation by resistance</a></li>
+<li class="chapter" data-level="6.6" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#monmoniers-algorithm-and-phylogeographic-breaks"><i class="fa fa-check"></i><b>6.6</b> Monmonier's algorithm and phylogeographic breaks</a></li>
+<li class="chapter" data-level="6.7" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#examples-phylogeographic-breaks-in-flying-vertebrates"><i class="fa fa-check"></i><b>6.7</b> examples, phylogeographic breaks in flying vertebrates</a></li>
+<li class="chapter" data-level="6.8" data-path="population-genetic-structure.html"><a href="population-genetic-structure.html#practice-2"><i class="fa fa-check"></i><b>6.8</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="historical-demography.html"><a href="historical-demography.html"><i class="fa fa-check"></i><b>7</b> Historical demography</a><ul>
+<li class="chapter" data-level="7.1" data-path="historical-demography.html"><a href="historical-demography.html#demographic-bottlenecks"><i class="fa fa-check"></i><b>7.1</b> demographic bottlenecks</a></li>
+<li class="chapter" data-level="7.2" data-path="historical-demography.html"><a href="historical-demography.html#simple-tests-for-genetic-bottlenecks"><i class="fa fa-check"></i><b>7.2</b> simple tests for genetic bottlenecks</a></li>
+<li class="chapter" data-level="7.3" data-path="historical-demography.html"><a href="historical-demography.html#demographic-expansion"><i class="fa fa-check"></i><b>7.3</b> demographic expansion</a></li>
+<li class="chapter" data-level="7.4" data-path="historical-demography.html"><a href="historical-demography.html#simple-tests-for-demographic-expansion-tajimas-d"><i class="fa fa-check"></i><b>7.4</b> simple tests for demographic expansion (Tajima's D)</a></li>
+<li class="chapter" data-level="7.5" data-path="historical-demography.html"><a href="historical-demography.html#simulation-testing-using-abc"><i class="fa fa-check"></i><b>7.5</b> simulation testing using ABC</a></li>
+<li class="chapter" data-level="7.6" data-path="historical-demography.html"><a href="historical-demography.html#example-from-pnw-salamanders"><i class="fa fa-check"></i><b>7.6</b> example from PNW salamanders</a></li>
+<li class="chapter" data-level="7.7" data-path="historical-demography.html"><a href="historical-demography.html#practice-3"><i class="fa fa-check"></i><b>7.7</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html"><i class="fa fa-check"></i><b>8</b> Phylogeny inference</a><ul>
+<li class="chapter" data-level="8.1" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#what-are-phylogenies"><i class="fa fa-check"></i><b>8.1</b> what are phylogenies?</a></li>
+<li class="chapter" data-level="8.2" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#gene-trees-and-species-trees"><i class="fa fa-check"></i><b>8.2</b> gene trees and species trees</a></li>
+<li class="chapter" data-level="8.3" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#inference-with-distance-methods"><i class="fa fa-check"></i><b>8.3</b> inference with distance methods</a></li>
+<li class="chapter" data-level="8.4" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#modeling-dna-variation"><i class="fa fa-check"></i><b>8.4</b> modeling DNA variation</a></li>
+<li class="chapter" data-level="8.5" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#inference-with-statistical-methods"><i class="fa fa-check"></i><b>8.5</b> inference with statistical methods</a></li>
+<li class="chapter" data-level="8.6" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#example-from-tamias-chipmunks"><i class="fa fa-check"></i><b>8.6</b> example from Tamias chipmunks</a></li>
+<li class="chapter" data-level="8.7" data-path="phylogeny-inference.html"><a href="phylogeny-inference.html#practice-4"><i class="fa fa-check"></i><b>8.7</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="species-limits.html"><a href="species-limits.html"><i class="fa fa-check"></i><b>9</b> Species limits</a><ul>
+<li class="chapter" data-level="9.1" data-path="species-limits.html"><a href="species-limits.html#cryptic-genetic-diversity"><i class="fa fa-check"></i><b>9.1</b> cryptic genetic diversity</a></li>
+<li class="chapter" data-level="9.2" data-path="species-limits.html"><a href="species-limits.html#clustering-methods-revisited"><i class="fa fa-check"></i><b>9.2</b> clustering methods revisited</a></li>
+<li class="chapter" data-level="9.3" data-path="species-limits.html"><a href="species-limits.html#abgd"><i class="fa fa-check"></i><b>9.3</b> ABGD</a></li>
+<li class="chapter" data-level="9.4" data-path="species-limits.html"><a href="species-limits.html#gmyc"><i class="fa fa-check"></i><b>9.4</b> GMYC</a></li>
+<li class="chapter" data-level="9.5" data-path="species-limits.html"><a href="species-limits.html#example-cryptic-diversity-in-sorex"><i class="fa fa-check"></i><b>9.5</b> example, cryptic diversity in Sorex</a></li>
+<li class="chapter" data-level="9.6" data-path="species-limits.html"><a href="species-limits.html#practice-5"><i class="fa fa-check"></i><b>9.6</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html"><i class="fa fa-check"></i><b>10</b> Species distribution modeling</a><ul>
+<li class="chapter" data-level="10.1" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#fundamental-vs.-realized-niches"><i class="fa fa-check"></i><b>10.1</b> fundamental vs. realized niches</a></li>
+<li class="chapter" data-level="10.2" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#climatic-variables"><i class="fa fa-check"></i><b>10.2</b> climatic variables</a></li>
+<li class="chapter" data-level="10.3" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#estimating-sdms-methods"><i class="fa fa-check"></i><b>10.3</b> estimating SDMs, methods</a></li>
+<li class="chapter" data-level="10.4" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#estimating-sdms-ensemble-approaches"><i class="fa fa-check"></i><b>10.4</b> estimating SDMs, ensemble approaches</a></li>
+<li class="chapter" data-level="10.5" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#hindcasting-sdms"><i class="fa fa-check"></i><b>10.5</b> hindcasting SDMs</a></li>
+<li class="chapter" data-level="10.6" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#forecasting-sdms"><i class="fa fa-check"></i><b>10.6</b> forecasting SDMs</a></li>
+<li class="chapter" data-level="10.7" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#example-sdms-for-pwn-slugs"><i class="fa fa-check"></i><b>10.7</b> example, SDMs for PWN slugs</a></li>
+<li class="chapter" data-level="10.8" data-path="species-distribution-modeling.html"><a href="species-distribution-modeling.html#practice-6"><i class="fa fa-check"></i><b>10.8</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html"><i class="fa fa-check"></i><b>11</b> Predictive Phylogeography</a><ul>
+<li class="chapter" data-level="11.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#trait-data-response-variables"><i class="fa fa-check"></i><b>11.1</b> trait data &amp; response variables</a></li>
+<li class="chapter" data-level="11.2" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#regression-based-approaches"><i class="fa fa-check"></i><b>11.2</b> regression-based approaches</a></li>
+<li class="chapter" data-level="11.3" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#random-forest-and-machine-learning"><i class="fa fa-check"></i><b>11.3</b> random forest and machine learning</a></li>
+<li class="chapter" data-level="11.4" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#example-predicting-cryptic-diversity-espindola-et-al.-2016"><i class="fa fa-check"></i><b>11.4</b> example, predicting cryptic diversity (Espindola et al. 2016)</a></li>
+<li class="chapter" data-level="11.5" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#example-predicting-genetic-isolation-by-distance-pelletier-2018"><i class="fa fa-check"></i><b>11.5</b> example, predicting genetic isolation by distance (Pelletier 2018)</a></li>
+<li class="chapter" data-level="11.6" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#practice-7"><i class="fa fa-check"></i><b>11.6</b> practice</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="conservation-genetics.html"><a href="conservation-genetics.html"><i class="fa fa-check"></i><b>12</b> Conservation genetics</a><ul>
+<li class="chapter" data-level="12.1" data-path="conservation-genetics.html"><a href="conservation-genetics.html#subtopics"><i class="fa fa-check"></i><b>12.1</b> subtopics</a></li>
+<li class="chapter" data-level="12.2" data-path="conservation-genetics.html"><a href="conservation-genetics.html#practice-8"><i class="fa fa-check"></i><b>12.2</b> Practice</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" alt="PhylogatR" style="width:75.0%" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="biodiversity-databases" class="section level1">
+<h1><span class="header-section-number">4</span> Biodiversity Databases</h1>
+<p>There are many open-source databases that house all types of biodiversity data, and we can use these data to study biodiversity in many different ways. This mostly includes information about what species are found where, but can also include additional information from an individual at a particular location, such as DNA sequence data, sex, body size, or even body condition. These databases are populated by researchers who deposit their data after completion of a research project. For example, I<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> have spent many hours in the field searching for several species of <em>Plethodon</em> salamander in the Pacific Northwest of the United States. For every individual I find I record GPS coordinates (latitude and longitude), along with other information about the location and individual. I also collect a non-invasive tissue sample to sequence DNA for those individuals in order to gain an understanding of the genetic variation within each species. Once I am finished with a research project, I can make these data publicly available by uploading the data to one of many repositories. We will focus on two main data repositories for this book that are used to feed our webserver that creates data-analysis-ready files.</p>
+<div id="global-biodiversity-information-facility-gbif" class="section level2">
+<h2><span class="header-section-number">4.1</span> Global Biodiversity Information Facility (GBIF)</h2>
+<p>The Global Biodiversity Information Facility <a href="https://www.gbif.org/">GBIF</a> was established in 2001 with the goal to make biodiversity data from specimen collections and observations accessible to anyone anywhere and promote scientific collaboration . It is an international network where members participate in housing computer nodes and making decisions as a collective. As of August 2020, GBIF houses over one billion occurrence records for over one million species, from over 50,000 datasets. While there are geographic biases in the data and not all described species are included (Yesson et al. 2007; OTHER), this is a massive amount of data! These data have been used to study behavior, systematics, impacts of climate change, invasive species, conservation, and food security issues see GBIF's <a href="https://www.gbif.org/science-review">science review</a> for more details.</p>
+<p>In the example in the opening paragraph, I could supply GBIF with information for each individual salamander that for which I was able to collect data. GBIF uses Darwin Core data standards (Wieczorek et al. 2012) and will not accept data that do not comply with these standards. Information from several aspects are required in data submissions, for example, record (e.g., nature of record, observer), event (e.g., date), location (e.g., GPS coordinates, locality descriptions), occurrence (e.g., associated sequence or media data), and taxon (e.g., scientific and common names; see Box 2. Taxonomy). Each term has a specific definition in order to standardize the data that is included. Because I also generated DNA sequence data associated with the individuals, I can include an identifier for that sequence for that individual that was deposited on a database that houses genetic data.</p>
+<p>Some problems that may be encountered when using this database are localities that are in a nearby waterbody for organisms that are known to be terrestrial, input errors where the sign is reversed for latitude or longitude, or latitude and longitude input as zero rather than identified as missing data. These can be rectified with some data cleaning steps we will discuss later in this chapter.</p>
+</div>
+<div id="genbank" class="section level2">
+<h2><span class="header-section-number">4.2</span> GenBank</h2>
+<p>The occurrence data provided by GBIF are used for many purposes in the biodiversity sciences however, associated sequence data from open-source repositories can allow us to ask even more exciting questions in biology! <a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a> is a collection of DNA sequence data from three organizations: DNA DataBank of Japan (DDBJ), the European Nucleotide Archive (ENA), and GenBank at NCBI (Benson et al. 2013). The goals of GenBank, released in 1982, are to provide access to and encourage use within the scientific community of the most up-to-date DNA sequence information. There are several ways to obtain these data and several types of DNA data that are stored. We will focus on the Nucleotide database. Once data are submitted and approved, all DNA sequences are assigned a unique identifier called an accession number. GenBank currently houses 218,642,238 sequences and 654,057,069,549 base pairs. Again, this is a massive amount of data!</p>
+<p>In the example in the opening paragraph, I would supply GenBank with each DNA sequence for each individual. These data may then be downloaded by other users in conjunction with DNA sequences from other studies and other species to answer all kinds of questions in ecology, evolution, and conservation, many of which we will explore throughout this book.</p>
+<p>Some problems that may be encountered when using this database are misidentified species, changes in taxonomy after submission, poorly annotated sequences, and even some sequences that are parasites but are labeled as that species. These issues result in the inability to adequately align DNA sequences for downstream use. There are several steps that can be taken to minimize the amount of messy data, and these will be discussed later in this chapter.</p>
+</div>
+<div id="phylogatr" class="section level2">
+<h2><span class="header-section-number">4.3</span> PhylogatR</h2>
+<p><a href="https://phylogatr.org/">Phylogatr</a> (phylogeographic data aggregation and repurposing) links occurrence data from GBIF and sequence data from GenBank so that DNA sequences can be traced to a specific geographic location and analysed in bulk. The data downloads from phylogatr are DNA sequence alignments (as discussed in Chapter 2) with associated GPS coordinates that are analysis ready. Computer scripts are provided throughout this book to assist data analysis and provide user-friendly teaching tools. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the phylogatr team.</p>
+<div class="figure">
+<img src="phylogatr-book-flow-chart.jpg" />
+
+</div>
+<p>Phylogatr first pulls down data from GBIF that includes a GenBank accession number and those that include GPS coordinates. Several other filters available from GBIF are implemented, for example, fossil specimens are not included. These sequences are then retrieved by phylgatr and sorted by species and locus. There has been some debate as to whether open-source data that is readily available are valuable due to the unreliability in the data (Causey et al. 2004; Wheeler et al. 2004). We argue that data processing and checking has greatly improved (Guralnick and Hill 2009) and by carefully choosing data cleaning steps and practicing reproducibility standards, these data are invaluable in understanding patterns in biodiversity.</p>
+<p>In order to overcome the problems that might be encountered in the databases discussed above the following data cleaning steps are carried out. Duplicate entries are removed based on a sorting scheme that finds duplicate entries based on the same GenBank number, GBIF identifier, geographic coordinates, species name, and date of occurrence event. Gene names are then standardized to the best of our ability. Mitochondrial gene names were relatively easy to standardize because they are highly represented in GenBank and have an easily manageable number of genes. For example, the cytochrome oxidase b gene might be deposited on GenBank using any of the following abbreviations: Cytb, Cyt-b, COB. These types of issues are problematic for data science projects where we need to group things that are the same and separate things that are different. In this case we can standardize all cytochrome oxidase b sequences by calling them one name: cytb. This is a work in progress and as we learn more about genomics across the diversity of life, we will be able to standardize nuclear gene names more throroughly. Currently, in some instances you might have different gene abbreviations for the same gene across different organisms.</p>
+<p>The last step that phylogtr takes is to align sequences that are from the same locus for the same species. We use the program <a href="https://mafft.cbrc.jp/alignment/software/">MAFFT v7</a> to align DNA sequences. During this process sequences are checked that they are going in the same direction. After this step, we need to check the alignments to make sure there are no really short or spurious sequences in the alignment. A bad alignment will vastly overestimate genetic distance among individuals in the alignment (see the last section of this chapter for an example of a bad alignment). We used <a href="http://trimal.cgenomics.org/downloads">TrimAI v1.2</a> to clean up the alignments automatically because there are too many to do this by eye. This step removes sequences that are really short (meaning there is a lot of missing data) so that any downstream analyses are not biased. Then it removes any sequences that do not overlap with the majority of sequences. This allows us to remove DNA sequences that have been labeled incorrectly. For more details on the phylogatr pipeline see PUBLICATION and GitHub page.</p>
+<p>Phylogatr numbers here: # sequences, genes, species etc. PIE CHARTS!</p>
+</div>
+<div id="using-pylogatr" class="section level2">
+<h2><span class="header-section-number">4.4</span> Using PylogatR</h2>
+<p>The first step in using phylogatr is to decide what geographic region you are interested in exploring. This can be done by specifying longitude and latitude or drawing a box around the region of interest. Coming soon: clicking on continents or biogeographic regions? Skip this step if you want to download a global dataset. <img src="choosegps.jpg" /></p>
+<p>Then identify what taxonomic<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> group you will focus on. In this example, I typed 'caudata' (a group of amphibians: salamanders) in the filter box, but you can also click on any names to keep those in your search. If you choose to type in a filter check, you'll want to check the search list because it will retain anything that has 'caudata' in the name. For example, see row two below (species: Monodelphis brevicaudata). It is an opossum, but the species name has 'caudata' nested within it. I only want salamanders, so I will click on 'Caudata' under family so everything else is removed. Skip this step if you want all species available. <img src="choosetaxon.jpg" /></p>
+<p>The data can be downloaded as a zip file or a tarball, depending on your operating system. The download includes a series of folders that are structured by taxonomy. The root folder will contain two files.</p>
+<ol style="list-style-type: decimal">
+<li>Tab delimited file called <code>genes.txt</code>. This file contains the gene and species for every alignment in the download, the directory in which the data are found, proportion of sequences retained after cleaning steps, number of unaligned sequences, number of aligned sequences, Kingdom, Phylum, Class, Order, Family, Genus, Species, Subspecies (when applicable), and a column to indicate whether the GBIF and Genbank species names do no match.</li>
+</ol>
+<p>Your download will be a zip file called <code>phylogatr-results</code>. If you are using a Mac, the zip file will unzip when you double click on it. If you are using Windows, you must extract the files first (this is very important, otherwise the computer won't recognize the file).</p>
+<ol start="2" style="list-style-type: decimal">
+<li>The <code>cite.txt</code> file contains the version numbers used for GBIF, GenBank, and phylogatr.</li>
+</ol>
+<p>The highest level of taxonomy that will have its own folder is Class. Then a series of folders will be nested within each of these folders, until you get to species. Each species folder will contain the following files:</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Fasta file with all the unaligned sequences for each locus with the file extension <code>.fa</code></p></li>
+<li><p>Fasta file with the aligned sequences for each locus with the file extension <code>.afa</code></p></li>
+<li><p>Tab-delimited file with data for each individual in the sequence alignment called <code>occurrence.txt</code>. This file contains the GenBank accession, GBIF ID, latitude, longitude, basis of record, geodetic datum, coordinate uncertainty, and issues.</p></li>
+</ol>
+<div class="figure">
+<img src="filestructure.png" />
+
+</div>
+</div>
+<div id="practice" class="section level2">
+<h2><span class="header-section-number">4.5</span> Practice</h2>
+<div id="data-checking-and-cleaning" class="section level3">
+<h3><span class="header-section-number">4.5.1</span> Data checking and cleaning</h3>
+<div id="purpose" class="section level4">
+<h4><span class="header-section-number">4.5.1.1</span> Purpose</h4>
+<p>This module is designed to explore data downloads from PhylogatR for observations that look spurious. Data cleaning, and filtering out bad data, is the most important step in a data science project. Bad data = bad results. The code presented here pulls genetic and geographic data downloaded from the PhylogatR website and allows you to visualize: i) aligned DNA sequences for all loci present for a species in the database and ii) geographic coordinates for all individuals within that particular species.</p>
+<p>This module will take you through the process of importing your data from PhylogatR, visualizing sequence alignments for individual loci simultaneously so that you may check them by eye, and plotting geographic coordinates of occurrences on a map for visual inspection.</p>
+<div id="learning-objectives" class="section level5">
+<h5><span class="header-section-number">4.5.1.1.1</span> Learning objectives</h5>
+<ol style="list-style-type: decimal">
+<li>Navigate an open-source database</li>
+<li>Explain why data cleaning is a necessary step in data analysis.</li>
+<li>Identify poorly aligned sequence data.</li>
+<li>Identify geographic outliers.</li>
+</ol>
+</div>
+<div id="packages-needed-for-this-module" class="section level5">
+<h5><span class="header-section-number">4.5.1.1.2</span> Packages needed for this module</h5>
+<ul>
+<li>ape</li>
+<li>phangorn</li>
+<li>apex</li>
+<li>ggplot2</li>
+<li>maps</li>
+</ul>
+<p>Load all the necessary packages necessary for this exercise.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#load necessary packages</span>
+<span class="kw">library</span>(ape)
+<span class="kw">library</span>(phangorn)
+<span class="kw">library</span>(apex)
+<span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(maps)</code></pre></div>
+</div>
+</div>
+<div id="importing-data" class="section level4">
+<h4><span class="header-section-number">4.5.1.2</span> Importing Data</h4>
+<p>Choose a species to assess sequence alignments and geographic coordinates. Navigate to the <a href="https://phylogatr.org/" target="_blank" rel="noopener">PhylogatR</a> website to download data for your chosen species.</p>
+<p style="color:red">
+Q1. For what species did you download data?
+</p>
+<p style="color:red">
+Q2. How many loci are present in the download?
+</p>
+<p>We will import all the sequence alignments for one species. As a demonstratoin, my <code>phylogatr-results</code> folder is locoated on my Desktop and we are going to look at the data from the species <em>Sorex palustris</em>. When you import your own data from PhylogatR, you will need to change the path to the folder accordingly. Read more about file paths <a href="https://ssc.wisc.edu/sscc/pubs/R_intro/book/1-10-paths-and-working-directories.html">here</a>.</p>
+<p>First, we need to store the path names of all of the aligned fasta files for our chosen species. <strong>Make sure your path is set to the folder of the species that you want to inspect.</strong> We will generate a list of paths to all of the aligned fasta files (i.e., all files in the species folder that end in .afa) using the function <code>list.files</code> and store this list in R as <code>myfiles</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#get paths to aligned fasta files in species folder (all .afa files in downloaded PhylogatR folder)</span>
+myfiles&lt;-<span class="kw">list.files</span>(<span class="dt">path=</span><span class="st">&quot;/Users/tpelletier/Desktop/phylogatr-results/Mammalia/Soricomorpha/Soricidae/Sorex-palustris&quot;</span>, <span class="dt">pattern=</span><span class="st">&quot;.afa&quot;</span>, <span class="dt">full.names=</span><span class="ot">TRUE</span>)</code></pre></div>
+<p>Next, we will use the paths stored in <code>myfiles</code> to import our aligned fasta files and create a multidna object. A multidna object is a class of object used to store multiple DNA sequence alignments. Sequences are stored as a list, with each element of the list being a separate DNA alignment stored as a DNAbin matrix. For more information on DNAbin and multidna objects, see <a href="https://cran.r-project.org/web/packages/apex/apex.pdf" target="_blank" rel="noopener">here</a>.</p>
+<p>We will use the function <code>read.multiFASTA</code> to create a multidna object containing our aligned fasta files. In the likely case that some individuals are not sequenced for all loci, setting the argument <code>add.gaps</code> to FALSE will ensure that indivuals that do not have a sequence for a locus (gap only sequences) will not be added to the alignment.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#create S4 class multidna object (contains DNAbin objects for all loci/.afa alignment files)</span>
+multidna&lt;-<span class="kw">read.multiFASTA</span>(<span class="dt">files=</span>myfiles, <span class="dt">add.gaps=</span><span class="ot">FALSE</span>)</code></pre></div>
+<p style="color:red">
+Q3. What are gaps in a DNA sequence alignment?
+</p>
+<p style="color:red">
+Q4. Explain what is meant by a gap only sequence?
+</p>
+</div>
+<div id="visualizing-sequence-alignments" class="section level4">
+<h4><span class="header-section-number">4.5.1.3</span> Visualizing sequence alignments</h4>
+<p>Now we will use the <code>plot</code> function to visualize the separate alignments (i.e., loci) in our multidna object simultaneously. When set to FALSE, the argument <code>rows</code> will return each locus in a separate image. If set to true, all loci will be shown in a single image (note: depending on how many alignments you have, setting <code>rows=TRUE</code> may make your alignments too small to inspect).</p>
+<p>The resulting alignments will consist of a series of rows (each representing the DNA sequence of one individual) and columns (each representing a particular nucleotide position in the locus). Accession numbers for each individual are located to the left of each row and the species and gene/locus name are located at the bottom of the alignment. Nucleotides are color coded according to the legend located at the top of the alignment. These plots are for the <em>Sorex palustris</em> data. Your plots should look something like this.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#visualize the seperate alignments in your multidna object simultaneously</span>
+<span class="kw">plot</span>(multidna, <span class="dt">rows=</span><span class="ot">FALSE</span>, <span class="dt">ask=</span><span class="ot">FALSE</span>)</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-4-1.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-2.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-3.png" width="672" /><img src="_main_files/figure-html/unnamed-chunk-4-4.png" width="672" /></p>
+<p>Use the following code to export your alignments as a pdf. They will be exported as <code>sequences.pdf</code> into your current working directory, unless you change the file path.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#export sequence alignments</span>
+<span class="kw">pdf</span>(<span class="dt">file=</span><span class="st">&quot;sequences.pdf&quot;</span>)
+<span class="kw">plot</span>(multidna, <span class="dt">rows=</span><span class="ot">FALSE</span>, <span class="dt">ask=</span><span class="ot">FALSE</span>)
+<span class="kw">dev.off</span>()</code></pre></div>
+<blockquote>
+<h2 id="sequence-alignments-what-to-watch-out-for"><span class="header-section-number">4.5.1.3</span> Sequence alignments: what to watch out for</h2>
+<p>The following alignments are meant to show you potential errors you might run into when inspecting your sequence alignments. PhylogatR takes steps to minimize these issues (see <a href="https://phylogatr.org" target="_blank" rel="noopener">here</a>), but it never hurts to check your data.</p>
+</blockquote>
+<p>In the first example, I have edited the alignment to contain sequences that have been entered in reverse (rev1-4) and reverse complement (revcompl1-2). As you can see, these sequences are comparable in length to the rest of the alignment and are lacking large regions of gaps. However, upon visual inspection they clearly do not line up with the rest of the alignment. These sequences can be checked and edited manually in a sequence viewing program (e.g., <a href="http://ugene.net" target="_blank" rel="noopener">UGENE</a> or <a href="http://www.mesquiteproject.org/?BasicMesquiteOperationPanel=open" target="_blank" rel="noopener">mesquite</a>).</p>
+<div class="figure">
+<img src="Rplot.png" />
+
+</div>
+<p style="color:red">
+Q5. Describe in words what it means to reverse a sequence?
+</p>
+<p style="color:red">
+Q6. Describe in words what it means to reverse compliment a sequence?
+</p>
+<p>In this next example, I have added parasitic sequences (parasite1-3) to the alignment. These sequences contain long regions of gaps and the regions of nucleotides present do not line up with the rest of the alignment. If your alignment has questionable sequences such as these, you can do a search of their accession numbers <a href="https://www.ncbi.nlm.nih.gov" target="_blank" rel="noopener">here</a> to ensure they are from the correct species and locus.</p>
+<div class="figure">
+<img src="Rplot01.png" />
+
+</div>
+<p style="color:red">
+Q7. Do any of your alignments look suspect? How do you know?
+</p>
+<p style="color:red">
+Q8. Submit the <code>sequences.pdf</code> file as part of your assignment.
+</p>
+</div>
+<div id="visualizing-geographic-coordinates" class="section level4">
+<h4><span class="header-section-number">4.5.1.4</span> Visualizing geographic coordinates</h4>
+<p>Now we will use the <code>occurrences.txt</code> file located in the species folder of our PhylogatR download to plot geographic coordinates for all individuals within our species folder and check for potential errors. First, we will import our <code>occurrences.txt</code> file into R and save it as a data frame called <code>occurrences</code>.</p>
+<p>Again, my <code>phylogatr-results</code> folder is on my Desktop and we are going to look at the data from the <code>occurrences.txt</code> file located within the species <em>Sorex palustris</em>. <strong>When you import your own data from PhylogatR, you will need to change this path accordingly.</strong></p>
+<p>Once that data has been imported into R, we will extract just the columns containing latitude and longitude (i.e., columns 3 and 4) and save them in R as <code>geo</code>. This isn't always necessary, but sometimes it can help to prune your data into smaller subsets that are you going to work with.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#read in geographic coordinates</span>
+occurrences&lt;-<span class="kw">read.table</span>(<span class="st">&quot;/Users/tpelletier/Desktop/phylogatr-results/Mammalia/Soricomorpha/Soricidae/Sorex-palustris/occurrences.txt&quot;</span>, <span class="dt">header=</span><span class="ot">TRUE</span>, <span class="dt">sep=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)
+
+<span class="co">#extract latitude and longitude</span>
+geo&lt;-occurrences[,<span class="kw">c</span>(<span class="dv">3</span><span class="op">:</span><span class="dv">4</span>)]</code></pre></div>
+<p>Now we will plot our geographic coordinates on a map to inspect for errors. In the resulting map, each red dot represents a single sampling locality. Please keep in mind that when using geographic coordinates in R, longitude (the x-axis) comes first, and latitude (the y-axis) comes second.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#get world map</span>
+world&lt;-<span class="kw">map_data</span>(<span class="st">&quot;world&quot;</span>)
+
+<span class="co">#add coordinates to world map in an object called g</span>
+g &lt;-<span class="st"> </span><span class="kw">ggplot</span>() <span class="op">+</span><span class="st"> </span>
+<span class="st">     </span><span class="kw">geom_polygon</span>(<span class="dt">data =</span> world, <span class="kw">aes</span>(<span class="dt">x=</span>long, <span class="dt">y =</span> lat, <span class="dt">group =</span> group), <span class="dt">fill =</span> <span class="st">&quot;lightgrey&quot;</span>, <span class="dt">color =</span> <span class="st">&quot;gray30&quot;</span>, <span class="dt">size =</span> .<span class="dv">25</span>) <span class="op">+</span>
+<span class="st">     </span><span class="kw">coord_fixed</span>(<span class="fl">1.3</span>) <span class="op">+</span>
+<span class="st">     </span><span class="kw">xlab</span>(<span class="st">&quot;Longitude&quot;</span>) <span class="op">+</span>
+<span class="st">     </span><span class="kw">ylab</span>(<span class="st">&quot;Latitude&quot;</span>) <span class="op">+</span>
+<span class="st">     </span><span class="kw">ggtitle</span>(<span class="st">&quot;Collection Locality Geographic Coordinates&quot;</span>) <span class="op">+</span>
+<span class="st">     </span><span class="kw">geom_point</span>(<span class="dt">data =</span> geo, <span class="kw">aes</span>(<span class="dt">x =</span> longitude, <span class="dt">y =</span> latitude), <span class="dt">color =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="fl">0.8</span>)
+
+<span class="co">#plot g</span>
+g</code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>The following code will export the map into your current working directory as <code>map.pdf</code>, unless you change the file path.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#export map</span>
+<span class="kw">pdf</span>(<span class="dt">file=</span><span class="st">&quot;map.pdf&quot;</span>)
+<span class="kw">plot</span>(g)
+<span class="kw">dev.off</span>()</code></pre></div>
+<blockquote>
+<h2 id="geographic-coordinates-what-to-watch-out-for"><span class="header-section-number">4.5.1.4</span> Geographic coordinates: what to watch out for</h2>
+<p>The following map is meant to show you potential errors you might encounter when inspecting your geographic data.</p>
+</blockquote>
+<p>You'll want to look out for any data points that are obviously outside of your species expected range. Data points that are very far away from the rest of the points (i.e., outliers) as well as data points in areas physiologically unlikely for your species (e.g., a terrestrial shrew in the middle of the ocean) should warrant further inspection. If you are unsure of the extent of your species range, you can search for your species <a href="https://www.iucnredlist.org" target="_blank" rel="noopener">here</a>.</p>
+<div class="figure">
+<img src="Rplot02.png" />
+
+</div>
+<p style="color:red">
+Q9. Do any of your geographic coordinates look suspect? How do you know?
+</p>
+<p style="color:red">
+Q10. Submit the <code>map.pdf</code> as part of your assignment.
+</p>
+</div>
+</div>
+<div id="outliers" class="section level3">
+<h3><span class="header-section-number">4.5.2</span> Outliers</h3>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><strong>Researcher profile</strong> Dr. Tara A Pelletier is an Assistant Professor of Biology at Radford University in Virginia. She began her life as a biologist while pursuing her BS in Biology at Salem State College in Massachusetts, where she learned to love herps and fieldwork. After working in industry for several years, she moved on to Portland State University in Oregon, studying phylogeography of the western red-backed salamander (Plethodon vehiculum) for her MS. It was there that she fell in love with genetics and realized the importance of statistics in biological research. She then earned her PhD from the Ohio State University in which she continued work on western Plethodon salamanders as a model system in phylogeography and developed her coding skills. Her passion now lies in teaching undergraduate biology using hands-on computational and field approaches that get students' hands dirty (both figuratively and literally) right from the start. Her current research focuses on understanding biodiversity patterns using data science and metabarcoding methods.<a href="biodiversity-databases.html#fnref1">↩</a></p></li>
+<li id="fn2"><p>People in general and biologists in particular, find it useful to group things. You wouldn't grab a book to read without knowing what genre it fell into right? Well, we can't study species effectively if we don't know what group they belong to either. Species are grouped into a hierarchical structure. The study of this hierarchical structure is called taxonomy. Organisms that are more closely related to one another, share more similar characteristics, and are therefore grouped together. The highest level of classification is Domain and contains three groups which are grouped together based on certain biochemical markers: Bacteria, Archaea, and Eukarya. Within the Eukarya are several Kingdoms including Animals, Plants, Fungi, and other single-celled Eukaryotes. All of these groups are split into smaller and smaller groups that are more specific the lower we go. In other words, the groups have more things in common as we move down the hierarchy. Species is the most specific we can get (though some people might argue that subspecies are a thing). Species are groups of individuals that are more similar to each other than they are to other individuals. Species are named using both their genus and species. For example, the western red-backed salamander's scientific name is Plethodon vehiculum. This binomial naming convention has been used for centuries, starting with Carolus Linnaeus (1701-1778), a Swedish naturalist, and these names are used internationally by scientists. People devote their lives to this important work, with the aim to understand the relationships among all life on Earth in a field called systematics. You can visit the website for the Society for <a href="https://www.systbio.org/">Systematic Biologists</a> for more information on the work done by current systematists. <img src="taxonomy.png" /><a href="biodiversity-databases.html#fnref2">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-form-and-structure-of-sequence-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="genetic-diversity-measures.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
