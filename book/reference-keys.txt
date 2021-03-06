@@ -98,3 +98,8 @@ learning-objectives-1
 packages-needed-for-this-module-1
 download-genetic-data
 download-iucn-data
+natural-history-collections
+import-iucn-data
+import-and-summarize-sequence-data
+merge-iucn-and-genetic-data-results
+data-analysis
