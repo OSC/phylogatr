@@ -11,7 +11,7 @@ layout: default
 
 *PhylogatR* brings together genetic data with georeferenced specimen records that are analysis-ready. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the *PhylogatR* team. *PhylogatR* supports both professional biologists and educational modules intended for secondary or college classes.
 
-**We are now accepting applications for *PhylogatR* beta-testers. Serving as a beta-tester will give you access to the full database for at least 6 months before it is released to the public, cool swag, and the opportunity to participate in an in-person workshop (once conferences are in-person again). If you are interested in becoming a beta-tester, please fill out this [form](https://docs.google.com/forms/d/109sF-e9WIdsSY57ZBx41ckMB9IK2AHW5_b5PjZJhTEg/edit).**
+**We are now accepting applications for *PhylogatR* beta-testers. Serving as a beta-tester will give you access to the full database for at least 6 months before it is released to the public, cool swag, and the opportunity to participate in an in-person workshop at the [Mountain Lake Biological Station](https://mlbs.virginia.edu/) in Pembroke VA Oct 1 - Oct 4, 2021. If you are interested in becoming a beta-tester, please fill out this [form](https://docs.google.com/forms/d/109sF-e9WIdsSY57ZBx41ckMB9IK2AHW5_b5PjZJhTEg/edit).**
 
 ## How *PhylogatR* Works
 
@@ -30,6 +30,3 @@ Patterns of genetic diversity within species contain information about the histo
 - Trey Dockendorf
 - Samir Mansour
 
-## Contact
-
-You can submit a question about *PhylogatR* or view answers to frequently asked questions [here](https://discourse.osc.edu/c/phylogatr/45).
