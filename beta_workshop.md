@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Beta-testing Workshop
+title: Beta-workshop
 ---
 
 # About
