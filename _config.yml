@@ -21,6 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   **phylo**geographic data aggre**gat**ion and **r**epurposing 
 callout: |
   Beta testing is now available by invitation only. [Launch Beta App](https://phylogatr.osc.edu)
+callout: |
+  Visit our Discourse page [here] (https://discourse.osc.edu/c/phylogatr/45)
 cite: | # line breaks preserved
   This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under grant numbers [1910623](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910623) and [1911293](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1911293&HistoricalAwards=false)
 
