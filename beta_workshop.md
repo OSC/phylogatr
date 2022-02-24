@@ -6,10 +6,8 @@ title: Beta-workshop
 # Beta-testing Workshop
 
 ## About the workshop
-<figure>
-  <img src=/assets/images/workshop.jpg>
-  <figcaption>phylogatR beta-testers gather for a workshop at the Mountain Lake Biological Station in Pembroke, VA from Oct 1 - Oct 4, 2021</figcaption>
-</figure>
+![workshop](/assets/images/workshop.jpg)
+phylogatR beta-testers gather for a workshop at the Mountain Lake Biological Station in Pembroke, VA from Oct 1 - Oct 4, 2021
 
 ### Workshop participants
 Anahi Espindola,
