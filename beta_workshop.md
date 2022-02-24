@@ -33,13 +33,13 @@ Wilson Guillory
 
 | Project  | Team  | About |
 | :----  | :-----  | :------ |
-| Salamander hidden diversity | :-----  | :------ |
+| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), Danielle Parsons & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | :------ |
 | Project 1  | :-----  | :------ |
 | Project 2  | :-----  | :------ |
 
 
 ## For beta-testers
 
-Current beta-testers can reach the phylogatr database here. [Launch Beta App](https://phylogatr.osc.edu)
+Current beta-testers can reach the phylogatR database [here](https://phylogatr.osc.edu).
 
 To ask questions or report bugs, please visit our [Discourse](https://discourse.osc.edu/c/phylogatr/45).
