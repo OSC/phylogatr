@@ -27,13 +27,14 @@ Katie Marske,
 Marcelo Coelho Miguel Gehara,
 Nattanon Wutthituntisil,
 William Hanson-Regan,
-Wilson Guillory
+Wilson Guillory,
+Stephanie Crouch
 
 ## Ongoing projects
 
 | Project  | Team  | About |
 | :----  | :-----  | :------ |
-| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), Danielle Parsons & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | :------ |
+| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), Danielle Parsons, Abbi Green & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | :------ |
 | Project 1  | :-----  | :------ |
 | Project 2  | :-----  | :------ |
 
