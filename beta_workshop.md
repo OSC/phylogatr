@@ -34,9 +34,9 @@ Stephanie Crouch
 
 | Project  | Team  | About |
 | :----  | :-----  | :------ |
-| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), Danielle Parsons, Abbi Green & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | :------ |
-| Project 1  | :-----  | :------ |
-| Project 2  | :-----  | :------ |
+| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), Danielle Parsons, Abbi Green, & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | This project aims to determine which species contain hidden diversity using DNA sequences, to then cross-reference these results with a variety of geographical, environmental, and other variables to determine which factors are most likely to predict hidden diversity. |
+| Global fish demographic history  | Justin Bagley, Christian Braswell, Macee Glick, Kayla Morrow, Rachel Bonner, Fernando Alda, William Hanson-Regan, Kevin J. O'Malley, Mackenzie Smith, Diego Elias, & Chantal Elyse Parker | This project is carrying out a comparative demographic analysis of freshwater and marine fishes worldwide. |
+| Project 3  | :-----  | :------ |
 
 
 ## For beta-testers
