@@ -19,7 +19,7 @@ Patterns of genetic diversity within species contain information about the histo
 
 Submit corrections to GenBank sequence data by sending an error report to [update@ncbi.nlm.nih.gov](update@ncbi.nlm.nih.gov).
 
-Submit corrections to GBIF occurence data by clicking the speech bubble icon in the upper right corner of the [GBIF website](https://www.gbif.org).
+Submit corrections to GBIF occurrence data by clicking the speech bubble icon in the upper right corner of the [GBIF website](https://www.gbif.org).
 
 ## Project Team
 
