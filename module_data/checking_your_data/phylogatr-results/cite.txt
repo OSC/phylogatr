@@ -1,0 +1,6 @@
+---
+gbif_doi: 0147211-200613084148143
+genbank_release: GenBank Flat File Release 234.0
+bold_download: https://www.boldsystems.org/ downloaded 2021 01-15, 02-21, 05-1, 05-4
+bold_doi: 10.1111/j.1471-8286.2006.01678.x
+phylogatr_code_version: Unknown

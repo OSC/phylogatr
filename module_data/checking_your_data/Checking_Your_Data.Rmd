@@ -1,0 +1,112 @@
+---
+title: '![PhylogatR](/Users/parsons.463/Desktop/Screen Shot 2020-06-19 at 6.37.48 PM.png) Checking Your Data'
+author: "Danielle Parsons and Tara Pelletier"
+date: "Updated 4 March 2022"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 1
+    toc_float: yes
+---
+# 1. Purpose
+***
+### This module is designed to explore data downloads from PhylogatR for observations that look spurious. Data cleaning, and filtering out bad data, is THE MOST IMPORTANT STEP in a data science project. Bad data = bad results.
+
+#### The code presented here allows you to visualize: i) aligned DNA sequences for all loci present for a particular species in the database and ii) geographic coordinates for all individuals within that species. 
+
+The data you will download from PhylogatR will contain a series of folders for each species. In each folder there will be unaligned and aligned fasta files for each **locus**[^1] that is present for that species in the database. These files contain the genetic data for a species. Unaligned fasta files will have the .fa extension and aligned fasta files will have the .afa extension. In addition to these files, each species folder will contain an occurrence file, named "occurrences.txt". This file contains metadata associated with individual species occurrences, such as accession number, taxonomy, basis of record, and geographic coordinates. 
+
+[^1]: A **locus** is a specific position in the genome where a particular gene or genetic marker is located. As such, not all loci necessarily correspond to a gene. Because PhylogatR alignments reflect genetic data uploaded to GenBank, you may also encounter alignments representing anonymous loci.
+
+We will start by looking at the data for just one species.This module will take you through the process of importing your data from PhylogatR, visualizing sequence alignments for individual loci simultaneously so that you may check them by eye, and plotting geographic coordinates of occurrences on a map for visual inspection.  
+
+First, load all the necessary packages. If you have not already installed these packages, you will need to do that first. See [here](https://www.neonscience.org/packages-in-r){target="_blank" rel="noopener"} for more information on package installation in R.
+
+```{r message=FALSE}
+#load necessary packages
+library("ape")
+library("phangorn")
+library("apex")
+library("ggplot2")
+library("maps")
+```
+
+# 2. Importing data
+***
+We will import all the sequence alignments for one species. In this case, there is a folder on my Desktop called “phylogatr-results” and we are going to look at the data from the species *Sorex monticolus*. When you import your own data from PhylogatR, you will need to change the path to the folder accordingly.
+
+First, we need to store the path names of all of the aligned fasta files for our chosen species. Again, make sure your path here is set to the folder of the species that you want to inspect. We will generate a list of paths to all of the aligned fasta files (i.e., all files in the species folder that end in .afa) using the function `list.files` and store this list in R as `myfiles`. 
+
+```{r}
+#get paths to aligned fasta files in species folder (all .afa files in downloaded PhylogatR folder)
+myfiles<-list.files(path="/Users/parsons.463/Desktop/phylogatr-results/Sorex-monticolus", pattern=".afa", full.names=TRUE)
+```
+
+Next, we will use the paths stored in "myfiles" to import our aligned fasta files and create a multidna object. A multidna object is a class of object used to store multiple DNA sequence alignments. Sequences are stored as a list, with each element of the list being a separate DNA alignment stored as a DNAbin matrix. For more information on DNAbin and multidna objects, see [here](https://cran.r-project.org/web/packages/apex/apex.pdf){target="_blank" rel="noopener"}.
+
+We will use the function `read.multiFASTA` to create a multidna object containing our aligned fasta files. In the likely case that some individuals are not sequenced for all loci, setting the argument `add.gaps=FALSE` will ensure that gap only sequences will not be added to the alignments. 
+
+```{r}
+#create S4 class multidna object (contains DNAbin objects for all loci/.afa alignment files)
+multidna<-read.multiFASTA(files=myfiles, add.gaps=FALSE)
+```
+
+# 3. Visualizing sequence alignments
+***
+Now we will use the `plot` function to visualize the separate alignments (i.e., loci) in our multidna object simultaneously. When set to false, the argument `rows` will return each locus in a separate image. If set to true, all loci will be shown in a single image (note: depending on how many alignments you have, setting `rows=TRUE` may make your alignments too small to inspect) 
+
+The resulting alignments will consist of a series of rows (each representing the DNA sequence of one individual) and columns (each representing a particular nucleotide position in the locus). Accession numbers for each individual are located to the left of each row and the species and gene/locus name are located at the bottom of the alignment. Nucleotides are color coded according to the legend located at the top of the alignment. 
+```{r}
+#visualize the seperate alignments in your multidna object simultaneously
+plot(multidna, rows=FALSE, ask=FALSE)
+```
+
+> ## Sequence alignments: what to watch out for ##
+The following alignments are meant to show you potential errors you might run into when inspecting your sequence alignments. PhylogatR takes steps to minimize these issues (see [here](https://phylogatr.org){target="_blank" rel="noopener"}), but it can never hurt to check your data.
+
+In the first example, I have edited the alignment to contain sequences that have been entered in reverse (rev1-4) and reverse complement (revcompl1-2). As you can see, these sequences are comparable in length to the rest of the alignment and are lacking large regions of gaps. However, upon visual inspection they clearly do not line up with the rest of the alignment. These sequences can be checked and edited manually in a sequence viewing program (e.g.,  [UGENE](http://ugene.net){target="_blank" rel="noopener"} or [mesquite](http://www.mesquiteproject.org/?BasicMesquiteOperationPanel=open){target="_blank" rel="noopener"}). 
+
+![](/Users/parsons.463/Desktop/Rplot.png)
+
+In this example, I have added parasitic sequences (parasite1-3) to the alignment. These sequences contain long regions of gaps and the regions of nucleotides present do not line up with the rest of the alignment. If your alignment has questionable sequences such as these, you can do a search of their accession numbers [here](https://www.ncbi.nlm.nih.gov){target="_blank" rel="noopener"} to ensure they are from the correct species and locus.  
+![](/Users/parsons.463/Desktop/Rplot01.png)
+
+**If needed, you can submit corrections to GenBank sequence data by sending an error report to [update@ncbi.nlm.nih.gov](update@ncbi.nlm.nih.gov).**
+
+# 4. Visualizing geographic coordinates 
+***
+Now we will use the "occurrences.txt" file located in the species folder of our PhylogatR download to plot geographic coordinates for all individuals within our species folder and check for potential errors. First, we will import our "occurrences.txt" file into R and save it as a data frame called "occurrences". 
+
+In this case, there is a folder on my Desktop called “phylogatr-results” and we are going to look at the data from the "occurrences.txt" file located within the species *Sorex monticolus*. When you import your own data from PhylogatR, you will need to change this path accordingly.
+
+Once that data has been imported into R, we will extract just the columns containing latitude and longitude (i.e., columns 4 and 5) and save them in R as "geo". 
+
+```{r}
+#read in geographic coordinates
+occurrences<-as.data.frame(read.table("/Users/parsons.463/Desktop/phylogatr-results/Sorex-monticolus/occurrences.txt", header=TRUE, sep="\t"))
+#extract latitude and longitude
+geo<-occurrences[,c(4:5)]
+```
+
+Now we will plot our geographic coordinates on a map to inspect for errors. In the resulting map, each red dot represents a single sampling locality. Please keep in mind that when using geographic coordinates in R, longitude (the x-axis) comes first, and latitude (the y-axis) comes second.  
+
+```{r warning=FALSE}
+#plot localities
+world<-map_data("world")
+ggplot()+ 
+  geom_polygon(data = world, aes(x=long, y = lat, group = group), fill = "lightgrey", color = "gray30", size = .25)+
+  coord_fixed(1.3)+
+  xlab("Longitude")+
+  ylab("Latitude")+
+  ggtitle("Collection Locality Geographic Coordinates")+
+  geom_point(data = geo, aes(x = as.numeric(geo$longitude), y = as.numeric(geo$latitude)), color = "red", size = 0.8)
+```
+
+> ## Geographic coordinates: what to watch out for ##
+The following map is meant to show you potential errors you might encounter when inspecting your geographic data. 
+
+You'll want to look out for any data points that are obviously outside of your species expected range. Data points that are very far away from the rest of the points (i.e., outliers) as well as data points in areas physiologically unlikely for your species (e.g., a terrestrial shrew in the middle of the ocean) should warrant further inspection. If you are unsure of the extent of your species range, you can search for your species [here](https://www.iucnredlist.org){target="_blank" rel="noopener"}. 
+
+![](/Users/parsons.463/Desktop/Rplot02.png)
+
+**If needed, you can submit corrections to GBIF occurrence data by clicking the speech bubble icon in the upper right corner of the [GBIF website](https://www.gbif.org).**

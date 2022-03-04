@@ -1,0 +1,62 @@
+gene	dir	proportion_retained	num_seqs_unaligned	num_seqs_aligned	kingdom	phylum	class	order	family	genus	species	subspecies	different_genbank_species
+Anourosorex-squamipes-COI	Mammalia/Soricomorpha/Soricidae/Anourosorex-squamipes	1.0	8	8	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Anourosorex	Anourosorex squamipes		
+Anourosorex-squamipes-CYTB	Mammalia/Soricomorpha/Soricidae/Anourosorex-squamipes	1.0	382	382	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Anourosorex	Anourosorex squamipes		
+Anourosorex-squamipes-ND2	Mammalia/Soricomorpha/Soricidae/Anourosorex-squamipes	1.0	310	310	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Anourosorex	Anourosorex squamipes		
+Blarina-brevicauda-APOB	Mammalia/Soricomorpha/Soricidae/Blarina-brevicauda	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Blarina	Blarina brevicauda		Soricidae sp. BOLD:AAA8615
+Blarina-brevicauda-COI	Mammalia/Soricomorpha/Soricidae/Blarina-brevicauda	1.0	44	44	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Blarina	Blarina brevicauda		Soricidae sp. BOLD:AAA8615
+Blarina-brevicauda-CYTB	Mammalia/Soricomorpha/Soricidae/Blarina-brevicauda	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Blarina	Blarina brevicauda		Soricidae sp. BOLD:AAA8615
+Chimarrogale-platycephalus-CYTB	Mammalia/Soricomorpha/Soricidae/Chimarrogale-platycephalus	1.0	13	13	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Chimarrogale	Chimarrogale platycephalus		
+Crocidura-dsinezumi-CYTB	Mammalia/Soricomorpha/Soricidae/Crocidura-dsinezumi	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura dsinezumi		
+Crocidura-macmillani-COI	Mammalia/Soricomorpha/Soricidae/Crocidura-macmillani	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura macmillani		
+Crocidura-olivieri-COI	Mammalia/Soricomorpha/Soricidae/Crocidura-olivieri	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura olivieri		
+Crocidura-suaveolens-COI	Mammalia/Soricomorpha/Soricidae/Crocidura-suaveolens	1.0	7	7	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura suaveolens		
+Crocidura-tanakae-COI	Mammalia/Soricomorpha/Soricidae/Crocidura-tanakae	1.0	25	25	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura tanakae		Crocidura cf. tanakae
+Crocidura-wuchihensis-COI	Mammalia/Soricomorpha/Soricidae/Crocidura-wuchihensis	1.0	5	5	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Crocidura	Crocidura wuchihensis		
+Cryptotis-lacertosus-APOB	Mammalia/Soricomorpha/Soricidae/Cryptotis-lacertosus	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis lacertosus		
+Cryptotis-lacertosus-BRCA1	Mammalia/Soricomorpha/Soricidae/Cryptotis-lacertosus	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis lacertosus		
+Cryptotis-lacertosus-CYTB	Mammalia/Soricomorpha/Soricidae/Cryptotis-lacertosus	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis lacertosus		
+Cryptotis-magna-COI	Mammalia/Soricomorpha/Soricidae/Cryptotis-magna	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis magna		
+Cryptotis-mam-APOB	Mammalia/Soricomorpha/Soricidae/Cryptotis-mam	1.0	9	9	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis mam		
+Cryptotis-mam-BRCA1	Mammalia/Soricomorpha/Soricidae/Cryptotis-mam	1.0	9	9	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis mam		
+Cryptotis-mam-CYTB	Mammalia/Soricomorpha/Soricidae/Cryptotis-mam	1.0	9	9	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis mam		
+Cryptotis-merriami-APOB	Mammalia/Soricomorpha/Soricidae/Cryptotis-merriami	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis merriami		
+Cryptotis-merriami-BRCA1	Mammalia/Soricomorpha/Soricidae/Cryptotis-merriami	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis merriami		
+Cryptotis-merriami-CYTB	Mammalia/Soricomorpha/Soricidae/Cryptotis-merriami	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis merriami		
+Cryptotis-mexicana-COI	Mammalia/Soricomorpha/Soricidae/Cryptotis-mexicana	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis mexicana		Cryptotis mexicanus
+Cryptotis-oreoryctes-APOB	Mammalia/Soricomorpha/Soricidae/Cryptotis-oreoryctes	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis oreoryctes		
+Cryptotis-oreoryctes-BRCA1	Mammalia/Soricomorpha/Soricidae/Cryptotis-oreoryctes	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis oreoryctes		
+Cryptotis-oreoryctes-CYTB	Mammalia/Soricomorpha/Soricidae/Cryptotis-oreoryctes	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Cryptotis	Cryptotis oreoryctes		
+Neomys-fodiens-COI	Mammalia/Soricomorpha/Soricidae/Neomys-fodiens	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Neomys	Neomys fodiens		
+Sorex-araneus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-araneus	1.0	15	15	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex araneus		
+Sorex-arcticus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-arcticus	1.0	33	33	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex arcticus		
+Sorex-bedfordiae-COI	Mammalia/Soricomorpha/Soricidae/Sorex-bedfordiae	1.0	16	16	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex bedfordiae		
+Sorex-caecutiens-COI	Mammalia/Soricomorpha/Soricidae/Sorex-caecutiens	1.0	30	30	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex caecutiens		
+Sorex-caecutiens-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-caecutiens	1.0	26	26	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex caecutiens		
+Sorex-cinereus-APOB	Mammalia/Soricomorpha/Soricidae/Sorex-cinereus	1.0	5	5	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex cinereus		
+Sorex-cinereus-BRCA1	Mammalia/Soricomorpha/Soricidae/Sorex-cinereus	1.0	5	5	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex cinereus		
+Sorex-cinereus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-cinereus	1.0	627	627	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex cinereus		
+Sorex-cinereus-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-cinereus	1.0	28	28	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex cinereus		
+Sorex-daphaenodon-COI	Mammalia/Soricomorpha/Soricidae/Sorex-daphaenodon	1.0	6	6	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex daphaenodon		
+Sorex-fumeus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-fumeus	1.0	154	154	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex fumeus		
+Sorex-haydeni-COI	Mammalia/Soricomorpha/Soricidae/Sorex-haydeni	1.0	7	7	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex haydeni		Sorex cinereus
+Sorex-hoyi-COI	Mammalia/Soricomorpha/Soricidae/Sorex-hoyi	1.0	44	44	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex hoyi		
+Sorex-isodon-COI	Mammalia/Soricomorpha/Soricidae/Sorex-isodon	1.0	17	17	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex isodon		
+Sorex-longirostris-APOB	Mammalia/Soricomorpha/Soricidae/Sorex-longirostris	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex longirostris		
+Sorex-longirostris-BRCA1	Mammalia/Soricomorpha/Soricidae/Sorex-longirostris	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex longirostris		
+Sorex-longirostris-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-longirostris	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex longirostris		
+Sorex-minutissimus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-minutissimus	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex minutissimus		
+Sorex-minutissimus-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-minutissimus	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex minutissimus		
+Sorex-minutus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-minutus	1.0	8	8	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex minutus		
+Sorex-monticolus-ADH2	Mammalia/Soricomorpha/Soricidae/Sorex-monticolus	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex monticolus	obscurus	
+Sorex-monticolus-APOB	Mammalia/Soricomorpha/Soricidae/Sorex-monticolus	1.0	5	5	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex monticolus	obscurus	
+Sorex-monticolus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-monticolus	1.0	45	45	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex monticolus	obscurus	
+Sorex-monticolus-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-monticolus	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex monticolus	obscurus	
+Sorex-palustris-COI	Mammalia/Soricomorpha/Soricidae/Sorex-palustris	1.0	14	14	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex palustris		Sorex palustris navigator
+Sorex-roboratus-COI	Mammalia/Soricomorpha/Soricidae/Sorex-roboratus	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex roboratus		
+Sorex-trowbridgii-COI	Mammalia/Soricomorpha/Soricidae/Sorex-trowbridgii	1.0	5	5	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex trowbridgii		
+Sorex-tundrensis-APOB	Mammalia/Soricomorpha/Soricidae/Sorex-tundrensis	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex tundrensis		
+Sorex-tundrensis-BRCA1	Mammalia/Soricomorpha/Soricidae/Sorex-tundrensis	1.0	4	4	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex tundrensis		
+Sorex-tundrensis-COI	Mammalia/Soricomorpha/Soricidae/Sorex-tundrensis	1.0	3	3	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex tundrensis		
+Sorex-tundrensis-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-tundrensis	1.0	7	7	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex tundrensis		
+Sorex-vagrans-COI	Mammalia/Soricomorpha/Soricidae/Sorex-vagrans	1.0	8	8	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex vagrans	vagrans	
+Sorex-volnuchini-CYTB	Mammalia/Soricomorpha/Soricidae/Sorex-volnuchini	1.0	10	10	Animalia	Chordata	Mammalia	Soricomorpha	Soricidae	Sorex	Sorex volnuchini		
