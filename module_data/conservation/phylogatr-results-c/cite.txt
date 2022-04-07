@@ -1,0 +1,4 @@
+---
+gbif_doi: 10.35000/cdl.t4hfxk
+genbank_release: GenBank Flat File Release 234.0
+phylogatr_code_version: 46e4510
