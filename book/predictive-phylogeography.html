@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Predictive Phylogeography | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Predictive Phylogeography | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Predictive Phylogeography | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="Bryan Carstens, Sydney Decker, Anahi Espindola, Sarah Foltz, Abbi Green, Danielle Parsons, Tara Pelletier, Jordan Satler" />
+
+
+<meta name="date" content="2022-03-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="species-limits.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.1</b> How to use this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#prerequisites-if-using-r"><i class="fa fa-check"></i><b>1.2</b> Prerequisites if using R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.2.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.2.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dna.html"><a href="dna.html"><i class="fa fa-check"></i><b>3</b> DNA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="dna.html"><a href="dna.html#practice"><i class="fa fa-check"></i><b>3.1</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html"><i class="fa fa-check"></i><b>4</b> Biodiversity Databases</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#global-biodiversity-information-facility-gbif"><i class="fa fa-check"></i><b>4.1</b> Global Biodiversity Information Facility (GBIF)</a></li>
+<li class="chapter" data-level="4.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#genbank"><i class="fa fa-check"></i><b>4.2</b> GenBank</a></li>
+<li class="chapter" data-level="4.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#bold"><i class="fa fa-check"></i><b>4.3</b> BOLD</a></li>
+<li class="chapter" data-level="4.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#phylogatr"><i class="fa fa-check"></i><b>4.4</b> <em>PhylogatR</em></a></li>
+<li class="chapter" data-level="4.5" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#using-phylogatr"><i class="fa fa-check"></i><b>4.5</b> Using <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#practice-1"><i class="fa fa-check"></i><b>4.6</b> Practice</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#downloading-data-from-phylogatr"><i class="fa fa-check"></i><b>4.6.1</b> Downloading data from <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-for-outliers"><i class="fa fa-check"></i><b>4.6.2</b> Check for outliers</a></li>
+<li class="chapter" data-level="4.6.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-sequence-alignments"><i class="fa fa-check"></i><b>4.6.3</b> Check sequence alignments</a></li>
+<li class="chapter" data-level="4.6.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#visualizing-geographic-coordinates"><i class="fa fa-check"></i><b>4.6.4</b> Visualizing geographic coordinates</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html"><i class="fa fa-check"></i><b>5</b> Population genetics and conservation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#loss-of-genetic-diversity"><i class="fa fa-check"></i><b>5.1</b> Loss of genetic diversity</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#small-population-size"><i class="fa fa-check"></i><b>5.1.1</b> Small population size</a></li>
+<li class="chapter" data-level="5.1.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#genetic-drift"><i class="fa fa-check"></i><b>5.1.2</b> Genetic drift</a></li>
+<li class="chapter" data-level="5.1.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#gene-flow"><i class="fa fa-check"></i><b>5.1.3</b> Gene flow</a></li>
+<li class="chapter" data-level="5.1.4" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#inbreeding"><i class="fa fa-check"></i><b>5.1.4</b> Inbreeding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#units-of-conservation"><i class="fa fa-check"></i><b>5.2</b> Units of conservation</a></li>
+<li class="chapter" data-level="5.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#practice-2"><i class="fa fa-check"></i><b>5.3</b> Practice</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#learning-objectives-1"><i class="fa fa-check"></i><b>5.3.1</b> Learning objectives:</a></li>
+<li class="chapter" data-level="5.3.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#data"><i class="fa fa-check"></i><b>5.3.2</b> Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="species-limits.html"><a href="species-limits.html"><i class="fa fa-check"></i><b>6</b> Species limits</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="species-limits.html"><a href="species-limits.html#cryptic-genetic-diversity"><i class="fa fa-check"></i><b>6.1</b> Cryptic genetic diversity</a></li>
+<li class="chapter" data-level="6.2" data-path="species-limits.html"><a href="species-limits.html#genetic-clustering"><i class="fa fa-check"></i><b>6.2</b> Genetic clustering</a></li>
+<li class="chapter" data-level="6.3" data-path="species-limits.html"><a href="species-limits.html#tree-based-methods"><i class="fa fa-check"></i><b>6.3</b> Tree-based methods</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="species-limits.html"><a href="species-limits.html#general-mixed-yule-coalescent-gmyc"><i class="fa fa-check"></i><b>6.3.1</b> General mixed Yule Coalescent (GMYC)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="species-limits.html"><a href="species-limits.html#practice-3"><i class="fa fa-check"></i><b>6.4</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html"><i class="fa fa-check"></i><b>7</b> Predictive Phylogeography</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#trait-data-and-response-variables"><i class="fa fa-check"></i><b>7.0.1</b> Trait data and response variables</a></li>
+<li class="chapter" data-level="7.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#practice-4"><i class="fa fa-check"></i><b>7.1</b> Practice</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" style="width:75.0%" alt="PhylogatR" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="predictive-phylogeography" class="section level1" number="7">
+<h1><span class="header-section-number">7</span> Predictive Phylogeography</h1>
+<p>Generally, and historically, phylogeography has been defined as the study of the spatial distribution of genetic lineages of species. This field in evolutionary biology has more recently evolved to identify specific events that have affected the spatial history of species, and has expanded from species-based studies to community and comparative approaches.</p>
+<p>Community and comparative phylogeography seeks to understand the extent to which environmental changes have affected whole communities of organisms. For instance, this field seeks to ask whether species that share ecological characteristics are likely to respond similarly to specific changes in the environment in which they co-occur (e.g., temperature shifts, the arrival of new species to the community, geological events). Indeed, this is something that has been identified in several systems, in particular those involving strongly spatially restricted species such as those occurring in isolated ecosystems, or species that are involved in very specialized interactions such as one-to-one pollination systems. If it is possible to find specific shared spatial histories for species that co-occur or that are tightly associated, it follows that there are some rules “guiding” whether species share spatial histories or not. If we can identify the nature of those rules, then we can use them to predict what species will share histories usign data related to the rules, and even in the absence of information about their histories. This is exactly what the field of predictive phylogeography seeks to do: identify general ecological and/or environmental traits shared by species that display similar spatial histories, and use those traits to predict the spatial genetic characteristics of species that are yet unstudied.</p>
+<div id="trait-data-and-response-variables" class="section level3" number="7.0.1">
+<h3><span class="header-section-number">7.0.1</span> Trait data and response variables</h3>
+<p>In order to do this, predictive phylogeography uses, on the one hand, traits associated with the ecology or biology of the species in question. This data will be used to seek to identify those “rules” that drive the spatial genetic characteristics of the studied taxa. On the other hand, once the rules have been identified, they are applied to new unstudied taxa, for which the ecological and biological data is present, but the genetic data is absent. The application of these rules on new unstudied species allow to make predictions about their phylogeographic traits. If we think about this from a model perspective, we see that we have trait (explanatory) and response variables that are used to create a model, measure its accuracy, and then use it to make predictions. What are then these variables?</p>
+<p><strong>Trait (explanatory) data:</strong> the trait data in these approaches is often environmental, biological, and/or ecological. Environmental data can be represented by climatic, soil, or geologic data. Biological data can refer to characteristics intrinsic to the organisms of study. For example, dispersal ability, mating type, taxonomic group, brood size, habit, etc. Finally, ecological data may be associated to information related to interactions the organisms are involved in, their trophic level, etc.</p>
+<p><strong>Response variables:</strong> the variables used as response ones have been different in different studies, but they often involved some measure of genetic characteristics of the taxa in question. For instance, presence of specific levels of genetic divergence within the taxon, measures of genetic isolation across the landscape, amounts of genetic diversity, number of genetic clusters.</p>
+</div>
+<div id="practice-4" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> Practice</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="species-limits.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
