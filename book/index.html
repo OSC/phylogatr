@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.26.3 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="Bryan Carstens, Sydney Decker, Anahi Espindola, Sarah Foltz, Abbi Green, Danielle Parsons, Tara Pelletier, Jordan Satler" />
+
+
+<meta name="date" content="2022-06-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="introduction.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.1</b> How to use this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#prerequisites-if-using-r"><i class="fa fa-check"></i><b>1.2</b> Prerequisites if using R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.2.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.2.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="introduction.html"><a href="introduction.html#an-image-demonstrating-what-we-mean-by-model-and-testing-them"><i class="fa fa-check"></i><b>2.3.1</b> an image demonstrating what we mean by model and testing them???</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dna.html"><a href="dna.html"><i class="fa fa-check"></i><b>3</b> DNA</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="dna.html"><a href="dna.html#the-genetic-code"><i class="fa fa-check"></i><b>3.1</b> The genetic code</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="dna.html"><a href="dna.html#practice-translate-the-following-dna-sequence-into-amino-acids"><i class="fa fa-check"></i><b>3.1.1</b> Practice: Translate the following DNA sequence into amino acids</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="dna.html"><a href="dna.html#mutation"><i class="fa fa-check"></i><b>3.2</b> Mutation</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="dna.html"><a href="dna.html#practice-this-section-and-code-needs-descriptions"><i class="fa fa-check"></i><b>3.2.1</b> Practice: this section and code needs descriptions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="dna.html"><a href="dna.html#synonymous-versus-non-synonymous-genetic-variation"><i class="fa fa-check"></i><b>3.3</b> Synonymous versus non-synonymous genetic variation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="dna.html"><a href="dna.html#practice-introduce-a-mutation"><i class="fa fa-check"></i><b>3.3.1</b> Practice: Introduce a mutation</a></li>
+<li class="chapter" data-level="3.3.2" data-path="dna.html"><a href="dna.html#practice-introduce-an-insertion"><i class="fa fa-check"></i><b>3.3.2</b> Practice: Introduce an insertion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="dna.html"><a href="dna.html#probabilities-snps-and-genetic-variation"><i class="fa fa-check"></i><b>3.4</b> Probabilities, SNPs, and genetic variation</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="dna.html"><a href="dna.html#this-is-a-lot-of-text---maybe-some-kind-of-graphic"><i class="fa fa-check"></i><b>3.4.1</b> this is a lot of text - maybe some kind of graphic?</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="dna.html"><a href="dna.html#modeling-sequence-variation"><i class="fa fa-check"></i><b>3.5</b> Modeling sequence variation</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="dna.html"><a href="dna.html#transitiontranservion-image"><i class="fa fa-check"></i><b>3.5.1</b> transition/transervion image?</a></li>
+<li class="chapter" data-level="3.5.2" data-path="dna.html"><a href="dna.html#practice-estimate-base-pair-composition"><i class="fa fa-check"></i><b>3.5.2</b> Practice: Estimate base pair composition</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="dna.html"><a href="dna.html#organellar-genomes-and-barcoding-genes"><i class="fa fa-check"></i><b>3.6</b> Organellar genomes and barcoding genes</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="dna.html"><a href="dna.html#image-of-mt-genome---need-to-find-one-that-is-open-access"><i class="fa fa-check"></i><b>3.6.1</b> image of mt genome - need to find one that is open access</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="dna.html"><a href="dna.html#shinyr-app"><i class="fa fa-check"></i><b>3.7</b> ShinyR app???</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html"><i class="fa fa-check"></i><b>4</b> Biodiversity Databases</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#global-biodiversity-information-facility-gbif"><i class="fa fa-check"></i><b>4.1</b> Global Biodiversity Information Facility (GBIF)</a></li>
+<li class="chapter" data-level="4.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#genbank"><i class="fa fa-check"></i><b>4.2</b> GenBank</a></li>
+<li class="chapter" data-level="4.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#bold"><i class="fa fa-check"></i><b>4.3</b> BOLD</a></li>
+<li class="chapter" data-level="4.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#phylogatr"><i class="fa fa-check"></i><b>4.4</b> <em>PhylogatR</em></a></li>
+<li class="chapter" data-level="4.5" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#using-phylogatr"><i class="fa fa-check"></i><b>4.5</b> Using <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#practice"><i class="fa fa-check"></i><b>4.6</b> Practice</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#downloading-data-from-phylogatr"><i class="fa fa-check"></i><b>4.6.1</b> Downloading data from <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-for-outliers"><i class="fa fa-check"></i><b>4.6.2</b> Check for outliers</a></li>
+<li class="chapter" data-level="4.6.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-sequence-alignments"><i class="fa fa-check"></i><b>4.6.3</b> Check sequence alignments</a></li>
+<li class="chapter" data-level="4.6.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#visualizing-geographic-coordinates"><i class="fa fa-check"></i><b>4.6.4</b> Visualizing geographic coordinates</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html"><i class="fa fa-check"></i><b>5</b> Population genetics and conservation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#loss-of-genetic-diversity"><i class="fa fa-check"></i><b>5.1</b> Loss of genetic diversity</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#small-population-size"><i class="fa fa-check"></i><b>5.1.1</b> Small population size</a></li>
+<li class="chapter" data-level="5.1.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#genetic-drift"><i class="fa fa-check"></i><b>5.1.2</b> Genetic drift</a></li>
+<li class="chapter" data-level="5.1.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#gene-flow"><i class="fa fa-check"></i><b>5.1.3</b> Gene flow</a></li>
+<li class="chapter" data-level="5.1.4" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#inbreeding"><i class="fa fa-check"></i><b>5.1.4</b> Inbreeding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#units-of-conservation"><i class="fa fa-check"></i><b>5.2</b> Units of conservation</a></li>
+<li class="chapter" data-level="5.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#practice-1"><i class="fa fa-check"></i><b>5.3</b> Practice</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#learning-objectives-1"><i class="fa fa-check"></i><b>5.3.1</b> Learning objectives:</a></li>
+<li class="chapter" data-level="5.3.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#data"><i class="fa fa-check"></i><b>5.3.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#click-and-play"><i class="fa fa-check"></i><b>5.4</b> Click and play!</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="species-limits.html"><a href="species-limits.html"><i class="fa fa-check"></i><b>6</b> Species limits</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="species-limits.html"><a href="species-limits.html#cryptic-genetic-diversity"><i class="fa fa-check"></i><b>6.1</b> Cryptic genetic diversity</a></li>
+<li class="chapter" data-level="6.2" data-path="species-limits.html"><a href="species-limits.html#genetic-clustering"><i class="fa fa-check"></i><b>6.2</b> Genetic clustering</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="species-limits.html"><a href="species-limits.html#structure"><i class="fa fa-check"></i><b>6.2.1</b> Structure</a></li>
+<li class="chapter" data-level="6.2.2" data-path="species-limits.html"><a href="species-limits.html#structurama"><i class="fa fa-check"></i><b>6.2.2</b> Structurama</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="species-limits.html"><a href="species-limits.html#tree-based-methods"><i class="fa fa-check"></i><b>6.3</b> Tree-based methods</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="species-limits.html"><a href="species-limits.html#general-mixed-yule-coalescent-gmyc"><i class="fa fa-check"></i><b>6.3.1</b> General mixed Yule Coalescent (GMYC)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="species-limits.html"><a href="species-limits.html#practice-2"><i class="fa fa-check"></i><b>6.4</b> Practice</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="species-limits.html"><a href="species-limits.html#data-preparation"><i class="fa fa-check"></i><b>6.4.1</b> Data Preparation</a></li>
+<li class="chapter" data-level="6.4.2" data-path="species-limits.html"><a href="species-limits.html#generate-a-phylogenetic-tree"><i class="fa fa-check"></i><b>6.4.2</b> Generate a Phylogenetic Tree</a></li>
+<li class="chapter" data-level="6.4.3" data-path="species-limits.html"><a href="species-limits.html#create-a-summary-tree"><i class="fa fa-check"></i><b>6.4.3</b> Create a summary tree</a></li>
+<li class="chapter" data-level="6.4.4" data-path="species-limits.html"><a href="species-limits.html#species-delimitation"><i class="fa fa-check"></i><b>6.4.4</b> Species Delimitation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html"><i class="fa fa-check"></i><b>7</b> Predictive Phylogeography</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#trait-data-and-response-variables"><i class="fa fa-check"></i><b>7.0.1</b> Trait data and response variables</a></li>
+<li class="chapter" data-level="7.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#machine-learning-and-random-forest"><i class="fa fa-check"></i><b>7.1</b> Machine learning and random forest</a></li>
+<li class="chapter" data-level="7.2" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#real-life-example"><i class="fa fa-check"></i><b>7.2</b> Real life example</a></li>
+<li class="chapter" data-level="7.3" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#practice-3"><i class="fa fa-check"></i><b>7.3</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>8</b> References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" style="width:75.0%" alt="PhylogatR" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title"><img src="Segoe1.png" title="fig:" style="width:75.0%" alt="PhylogatR" /></h1>
+<p class="author"><em>Bryan Carstens, Sydney Decker, Anahi Espindola, Sarah Foltz, Abbi Green, Danielle Parsons, Tara Pelletier, Jordan Satler</em></p>
+<p class="date"><em>2022-06-01</em></p>
+</div>
+<div id="background" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">1</span> Background<a href="index.html#background" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Genetic data are almost like a time machine. Just as paleontologists can use the fossilized remains of dead plants and animals to learn about species that once lived on our planet, geneticists can use genetic data to learn about the history of species that are currently living on our planet. At a basic level, this works for the same reason that people tend to resemble their biological siblings. If you have a brother or a sister, both of you have inherited half of your DNA from each of your parents. The vast majority of this DNA, which is both a large molecule with billions of nucleotide bases and something like software code for a biological computer, is extremely stable. Very rarely, mistakes can occur during the process of meiosis and these mistakes are occasionally passed on to offspring, so the good news here is that you’re not exactly like your parents! The better news from the standpoint of genetics is that these mistakes, which are referred to as mutations, provide a record of descent from common ancestors. As biologists, we can read this record in a manner that is similar to how a paleontologist would make inferences about how an extinct species may have lived. By the end of this book, you will be able to read this record for yourself using data collected from millions of samples and thousands of species. In the process of doing this, you’ll learn about genetics, computer code, and biodiversity.</p>
+<p><img src="bat%20paintingF.jpg" />
+<font size="1">Figure created by Abbie Zimmer</font></p>
+<p>The goals of our <a href="https://phylogatr.org/" target="_blank"><em>phylogatR</em></a> project are simple: we want to empower students to actively learn about genetics, computer code, and biodiversity by repurposing genetic and climatic data that cost millions of dollars and decades of hard work by thousands of scientists to acquire. We hope to highlight basic scientific research in a discipline that is fundamentally about global change. In the process of reading this book, working through the exercises, and designing your own research studies, you’ll learn important skills and techniques in the data sciences that are applicable to any of a number of professions. We hope to convince you that the conservation of biodiversity is one of the most pressing issues facing people today, that this issue is exacerbated by climate change, and that we must value this irreplaceable natural resource before it goes extinct. Let’s get started!</p>
+<div id="how-to-use-this-book" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> How to use this book<a href="index.html#how-to-use-this-book" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Each chapter will introduce you to a topic in using genetic data to understand biodiversity. It is not meant to serve as a genetics textbook, but a refresher for those that are already familiar with the topics or a very basic introduction. This book builds on itself but does need to be used in its entirety or sequentially. <strong>However, you will want to read <u>Chapter 4 Biodiversity databases</u> in order to understand the data being used throughout the book.</strong></p>
+<p>At the end of each chapter there will be hands-on practice that use <em>phylogatR</em>. For each exercise you can choose to walk through the R modules and learn how to code! Or you can use the graphical user interface (GUI) and click the buttons to use the data.</p>
+</div>
+<div id="prerequisites-if-using-r" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Prerequisites if using R<a href="index.html#prerequisites-if-using-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="r-and-rstudio" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> R and RStudio<a href="index.html#r-and-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>R is a language and environment for statistical computing and graphics.</p>
+<p>RStudio is a set of integrated tools designed to help you be more productive with R.</p>
+<p>You will need to install R and RStudio on your computer. See <a href="https://rstudio-education.github.io/hopr/starting.html" target="_blank" rel="noopener">here</a> for instructions.</p>
+</div>
+<div id="r-packages" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> R packages<a href="index.html#r-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You will need to load R packages in order to obtain the functions necessary for the analyses that will be conducted throughout this book. If you have not already installed tehh called-for packages, you will need to do that first. See <a href="https://www.neonscience.org/packages-in-r" target="_blank" rel="noopener">here</a> for more information on package installation in R. In short, you will install R packages using the <code>install.packages()</code> function. You only need to install packages once on your computer, but you need to load the library every time you open a new R session.</p>
+<div id="running-r-code" class="section level4 hasAnchor" number="1.2.2.1">
+<h4><span class="header-section-number">1.2.2.1</span> Running R code<a href="index.html#running-r-code" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Everything in grey boxes is R code or output. To run the code, you can copy and paste the code into the R console from which you are working. Lines of text within the grey boxes that start with ‘#’ and are blue, are comments for the code and ignored by R. Output will follow in a second grey box and begin with ‘##’.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#here is an example of R code</span></span>
+<span id="cb1-2"><a href="index.html#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="cb1-3"><a href="index.html#cb1-3" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div>
+<pre><code>## [1] 4</code></pre>
+
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

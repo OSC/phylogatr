@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Introduction | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Introduction | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Introduction | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="list of people" />
+
+
+<meta name="date" content="2022-03-12" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#prerequisites"><i class="fa fa-check"></i><b>1.1</b> Prerequisites</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.1.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" style="width:75.0%" alt="PhylogatR" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Introduction</h1>
+<p>#Introduction</p>
+<p>##Data in the biological sciences
+Broadly defined, biology is the study of living things, from cells to ecosystems and everything in between. Data in the biological sciences can consist of observations from natural systems, manipulative experiments, and quantitative measurements of any sort. Biologists collect data in any of a number of ways, from observing natural systems and making a record of their observations (e.g., bird watching surveys) to measuring the concentration of hormones in cellular tissue to sequencing DNA from samples and comparing it to sequences collected from other samples. While biology as a science has been around for centuries, many of the data we collect in this century are facilitated by technological advances. For example, while early researchers such as Darwin and Mendel inferred that there must be some physical mechanism for encoding hereditary information, it wasn’t until 1944 that Avery first proposed that deoxyribonucleic acid could carry this hereditary information. By 1952, technological advances allowed Franklin to use X-rays to photograph the molecule, and then Watson and Crick used this vital information to determine that the shape of the DNA molecule was a double helix. With this critical piece of information in place, scientists worked tirelessly to develop technology that could be used to understand this molecule. Nirenberg discovered that nucleotide bases combined in groups of three to code for amino acids in 1965; Sanger developed technology for efficient sequencing of nucleotide bases in 1977; and by 1984 Mullis developed technology for polymerase chain reaction (PCR) which enabled scientists to magnify DNA in order to greatly increase the efficiency of sequencing reactions. Much of the data included in the PhylogatR database was collected using Sanger sequencing techniques and PCR.</p>
+<p>In 1990, the United States government allocated $3 billion towards the Human Genome Project which aimed to produce the first complete sequenced of all the DNA in human chromosomes. This project took 13 years to complete using largely Sanger sequencing methods. Similarly, most of the data available via PhylogatR were funded by government investment in basic research. Government agencies such as the National Science Foundation ($8.1 billion annual budget) and the National Institutes of Health ($39 billion annual budget) in the United States funded millions of dollars in grant proposals in 2019, money that ultimately comes from taxpayers (by comparison, the U. S. spent about $670 billion on defense spending in 2019). Most of this research money pays salaries for the scientists that do basic research, but some of it is used to pay for sequencing DNA and other data collection. Luckily, the investment in the Human Genome Project led to dramatic improvements in the technology used for sequencing DNA, and ultimately lowered the costs associated with genome sequencing. Today, genomes from individual people can be sequenced for less than $1000, and these sequences are used to design individualized medical treatments for patients with cancer and other diseases. The biological sciences went from having very little genetic data to being positively flooded with data, and this has created a huge demand for skilled professionals to conduct bioinformatic analyses. These researchers are knowledgeable about biology and genetics, skilled in computational data analysis, and have the ability to solve problems in creative ways. Like many jobs that require science and technology skills, bioinformaticians command high salaries. The bioinformatics skills that you learn by working on exercises using PhylogatR are directly transferrable to this profession.</p>
+<p>##Why species?
+Throughout this book, we’ll focus our attention at the level of biological species. Species are one of the fundamental levels of biological organization and serve as a convenient transition between biological processes that operate within individuals (think metabolism, physiology, etc.) and the ecological ones that operate among individuals (think competition for resources, predation, etc.). Species are one of the ways that biological data are classified, in some sense they are analogous to different genres in literature. Just as all horror or mystery novels share certain attributes, the members of a species share certain biological characteristics. Notably, just as some horror novels are better than others, all individuals within a species are not identical, some are better at exploiting resources and thus are more likely to survive, reproduce, and leave offspring that do the same. These differences across individuals are essential to natural selection, the primary force that drives evolutionary change. Since the category of species is so essential to the biological sciences, an entire discipline known as taxonomy has developed to discover and describe species. Taxonomists use a system referred to as the binomial naming system to name species. Developed by Linneaus, this system uses the genus and species taxonomic ranks to describe species, and by convention is written with the former rank capitalized and in italics (e.g., Homo sapiens, Canis lupus).</p>
+<p>##The Scientific Method
+Before jumping into exercises that will teach you how to use PhylogatR, it would be useful to discuss the scientific method. While descriptions of this method vary, most science classes discuss a process where observations and information are used to form a hypothesis that makes predictions which are then tested by designing experiments that are cleverly designed to determine whether the predictions are supported or rejected. This approach to science is remarkably effective, and indirectly responsible for many of the technological advances that we take for granted every day. However, in order to apply this method to a historical science, we need to expand our view of the scientific method. Scientific disciplines such as paleontology, geology, and evolutionary biology are primarily concerned with understanding how historical processes have influenced the Earth in the present. The evidence used by these disciplines are often the results of the processes that we hope to learn about, for example the stratification in rock walls that we can observe in river canyons or the fossils of marine organisms that we can find in fossil beds far away from the ocean. Since testing hypotheses about the past cannot rely on experiments, scientists collect these data and then use them to build and test conceptual models. In order to facilitate this process, scientists also assume that the environmental forces which we can observe in the present have also been acting in the past. This viewpoint, known as uniformitarianism, enables scientists to gather evidence that pertains to historical processes and the apply this evidence to the predictions of the conceptual models that underly research in the various disciplines. Throughout this book, we’ll develop some of these models, help you collect data using PhylogatR, and then demonstrate how such data can be used to test the predictions of these model. This process is analogous to designing an experiment and as such offers a powerful approach to learning about the past.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

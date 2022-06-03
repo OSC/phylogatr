@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 DNA and the genetic code | PhylogatR</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 DNA and the genetic code | PhylogatR" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 DNA and the genetic code | PhylogatR" />
+  
+  
+  
+
+<meta name="author" content="Bryan Carstens, Sydney Decker, Anahi Espindola, Sarah Foltz, Abbi Green, Danielle Parsons, Tara Pelletier, Jordan Satler" />
+
+
+<meta name="date" content="2022-05-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="biodiversity-databases.html"/>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Background</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#how-to-use-this-book"><i class="fa fa-check"></i><b>1.1</b> How to use this book</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#prerequisites-if-using-r"><i class="fa fa-check"></i><b>1.2</b> Prerequisites if using R</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.2.1</b> R and RStudio</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#r-packages"><i class="fa fa-check"></i><b>1.2.2</b> R packages</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="introduction.html"><a href="introduction.html#data-in-the-biological-sciences"><i class="fa fa-check"></i><b>2.1</b> Data in the biological sciences</a></li>
+<li class="chapter" data-level="2.2" data-path="introduction.html"><a href="introduction.html#why-species"><i class="fa fa-check"></i><b>2.2</b> Why species?</a></li>
+<li class="chapter" data-level="2.3" data-path="introduction.html"><a href="introduction.html#the-scientific-method"><i class="fa fa-check"></i><b>2.3</b> The Scientific Method</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html"><i class="fa fa-check"></i><b>3</b> DNA and the genetic code</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#mutation"><i class="fa fa-check"></i><b>3.1</b> Mutation</a></li>
+<li class="chapter" data-level="3.2" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#synonymous-versus-non-synonymous-genetic-variation"><i class="fa fa-check"></i><b>3.2</b> Synonymous versus non-synonymous genetic variation</a></li>
+<li class="chapter" data-level="3.3" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#probabilities-snps-and-genetic-variation"><i class="fa fa-check"></i><b>3.3</b> Probabilities, SNPs, and genetic variation</a></li>
+<li class="chapter" data-level="3.4" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#modeling-sequence-variation"><i class="fa fa-check"></i><b>3.4</b> Modeling sequence variation</a></li>
+<li class="chapter" data-level="3.5" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#organellar-genomes-and-barcoding-genes"><i class="fa fa-check"></i><b>3.5</b> Organellar genomes and barcoding genes</a></li>
+<li class="chapter" data-level="3.6" data-path="dna-and-the-genetic-code.html"><a href="dna-and-the-genetic-code.html#practice"><i class="fa fa-check"></i><b>3.6</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html"><i class="fa fa-check"></i><b>4</b> Biodiversity Databases</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#global-biodiversity-information-facility-gbif"><i class="fa fa-check"></i><b>4.1</b> Global Biodiversity Information Facility (GBIF)</a></li>
+<li class="chapter" data-level="4.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#genbank"><i class="fa fa-check"></i><b>4.2</b> GenBank</a></li>
+<li class="chapter" data-level="4.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#bold"><i class="fa fa-check"></i><b>4.3</b> BOLD</a></li>
+<li class="chapter" data-level="4.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#phylogatr"><i class="fa fa-check"></i><b>4.4</b> <em>PhylogatR</em></a></li>
+<li class="chapter" data-level="4.5" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#using-phylogatr"><i class="fa fa-check"></i><b>4.5</b> Using <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#practice-1"><i class="fa fa-check"></i><b>4.6</b> Practice</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#downloading-data-from-phylogatr"><i class="fa fa-check"></i><b>4.6.1</b> Downloading data from <em>phylogatR</em></a></li>
+<li class="chapter" data-level="4.6.2" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-for-outliers"><i class="fa fa-check"></i><b>4.6.2</b> Check for outliers</a></li>
+<li class="chapter" data-level="4.6.3" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#check-sequence-alignments"><i class="fa fa-check"></i><b>4.6.3</b> Check sequence alignments</a></li>
+<li class="chapter" data-level="4.6.4" data-path="biodiversity-databases.html"><a href="biodiversity-databases.html#visualizing-geographic-coordinates"><i class="fa fa-check"></i><b>4.6.4</b> Visualizing geographic coordinates</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html"><i class="fa fa-check"></i><b>5</b> Population genetics and conservation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#loss-of-genetic-diversity"><i class="fa fa-check"></i><b>5.1</b> Loss of genetic diversity</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#small-population-size"><i class="fa fa-check"></i><b>5.1.1</b> Small population size</a></li>
+<li class="chapter" data-level="5.1.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#genetic-drift"><i class="fa fa-check"></i><b>5.1.2</b> Genetic drift</a></li>
+<li class="chapter" data-level="5.1.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#gene-flow"><i class="fa fa-check"></i><b>5.1.3</b> Gene flow</a></li>
+<li class="chapter" data-level="5.1.4" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#inbreeding"><i class="fa fa-check"></i><b>5.1.4</b> Inbreeding</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#units-of-conservation"><i class="fa fa-check"></i><b>5.2</b> Units of conservation</a></li>
+<li class="chapter" data-level="5.3" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#practice-2"><i class="fa fa-check"></i><b>5.3</b> Practice</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#learning-objectives-1"><i class="fa fa-check"></i><b>5.3.1</b> Learning objectives:</a></li>
+<li class="chapter" data-level="5.3.2" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#data"><i class="fa fa-check"></i><b>5.3.2</b> Data</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="population-genetics-and-conservation.html"><a href="population-genetics-and-conservation.html#click-and-play"><i class="fa fa-check"></i><b>5.4</b> Click and play!</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="species-limits.html"><a href="species-limits.html"><i class="fa fa-check"></i><b>6</b> Species limits</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="species-limits.html"><a href="species-limits.html#cryptic-genetic-diversity"><i class="fa fa-check"></i><b>6.1</b> Cryptic genetic diversity</a></li>
+<li class="chapter" data-level="6.2" data-path="species-limits.html"><a href="species-limits.html#genetic-clustering"><i class="fa fa-check"></i><b>6.2</b> Genetic clustering</a></li>
+<li class="chapter" data-level="6.3" data-path="species-limits.html"><a href="species-limits.html#tree-based-methods"><i class="fa fa-check"></i><b>6.3</b> Tree-based methods</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="species-limits.html"><a href="species-limits.html#general-mixed-yule-coalescent-gmyc"><i class="fa fa-check"></i><b>6.3.1</b> General mixed Yule Coalescent (GMYC)</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="species-limits.html"><a href="species-limits.html#practice-3"><i class="fa fa-check"></i><b>6.4</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html"><i class="fa fa-check"></i><b>7</b> Predictive Phylogeography</a>
+<ul>
+<li class="chapter" data-level="7.0.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#trait-data-and-response-variables"><i class="fa fa-check"></i><b>7.0.1</b> Trait data and response variables</a></li>
+<li class="chapter" data-level="7.1" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#machine-learning-and-random-forest"><i class="fa fa-check"></i><b>7.1</b> Machine learning and random forest</a></li>
+<li class="chapter" data-level="7.2" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#real-life-example"><i class="fa fa-check"></i><b>7.2</b> Real life example</a></li>
+<li class="chapter" data-level="7.3" data-path="predictive-phylogeography.html"><a href="predictive-phylogeography.html#practice-4"><i class="fa fa-check"></i><b>7.3</b> Practice</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><img src="Segoe1.png" title="fig:" style="width:75.0%" alt="PhylogatR" /></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dna-and-the-genetic-code" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> DNA and the genetic code</h1>
+<p>Deoxyribonucleic acid (DNA) is a molecule that consists of two chains that coil around each other to form a structure that looks something like a twisted ladder and is known as a double helix. The sides of this ladder are composed of sugars and phosphates, with the rungs of the ladder composed of nucleotides that occur in one of four forms: Two of these, Cytosine and Thymine, are known as Pyrimidines; the other two, Guanine and Adenine, are known as Purines. These nucleotide bases (Adenine, Cytosine, Guanine, and Thymine) form hydrogen bonds at the center of each rung of the DNA ladder to hold the whole structure together. These bonds occur in a complementary manner, with Purines always bonding to Pyrimidines. Because Adenine and Thymine have two available spots for hydrogen bonds these nucleotide bases always bond to each other; similarly, Guanine and Cytosine both have three available spots for hydrogen bonds and thus always bond to each other. This complementary bonding in combination with the double helix structure has several important ramifications: it allows an almost endless variation in the sequence of individual nucleotide bases while simultaneously making the molecule very stable, and it enables the sequence of these bases to be repeated on each side of the ladder. The complementary bonding (i.e., A—T and C—G) allows the total sequence to be a reverse complement on either side of the ladder. However, the ladder metaphor is not perfect, as DNA shares some important characteristics with a zipper as well because its reverse complementarity allows it to be unzipped for two different purposes: to serve as the instructions for making proteins and during the process of meiosis.</p>
+<p>DNA provides the instructions for making the proteins that constitute the bodies of plants, animals, and fungi. This process occurs via a process where DNA Is translated into RNA (with Uracil substituting for Thymine) from which chains of amino acid are formed in the cell into the three-dimensional structures of proteins. Ultimately, the instructions for making a given protein flows from triplets of nucleotide bases called codons, where three bases describe the recipe for one of 20 amino acids, read down the entire length of the gene in question. Since there are four different nucleotide bases assembled into sets of three bases that code for a particular amino acid, there are more combinations of three bases (43 = 64, to be exact) than amino acids (20). For this reason, the mapping of codons to amino acids has inherent redundancy, where different triplets of nucleotides can code for the same amino acid. For most of these cases, the first and second nucleotides in the codon will always correspond to a particular amino acid but the third position can vary such that any two or four of the possible bases can code for a particular amino acid. In addition, there are special codons such as ATG and AGA that initiate and conclude the protein synthesis. This correspondence between nucleotide codons and the amino acids that are ultimately produced is known as the genetic code. The double-stranded structure of DNA is also unzipped any time when cells divide. In these cases, the set of DNA in the nucleus of the parent cell is replicated in order to provide an exact copy in each of the daughter cells via the process of mitosis. Some cells, which are known as gametes, undergo a special process of incomplete replication referred to as meiosis in species that reproduce sexually. This allows the gametes from the mother and father to be combined in their offspring.</p>
+<p>In practice, when geneticists sample the DNA from a natural population they mostly do not have information about the relationships among individuals that are sampled. They are, however, able to take tissue samples, extract DNA for sequencing or genotyping, and derive information from these samples. On a basic level, every sample contains DNA sequences of some type, and information such as the length of the sequence, the DNA base composition (i.e., the proportion of A’s and C’s and G’s and T’s) and the variation within this sample are useful. In order to learn how this information is used, a brief review of the ultimate source of genetic variation is required.</p>
+<p>First, load the packages required for the following exercises.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="dna-and-the-genetic-code.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(seqinr)</span>
+<span id="cb1-2"><a href="dna-and-the-genetic-code.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ape)</span>
+<span id="cb1-3"><a href="dna-and-the-genetic-code.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(apex)</span></code></pre></div>
+<div id="mutation" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Mutation</h2>
+<p>While the sequence of the DNA molecule is very stable, occasionally there are mistakes in the process of replication. When these occur during mitosis in somatic cells, the result can sometimes lead to cancerous growth. Mistakes that occur during meiosis in the gamete cells are not likely to harm the organism but can sometimes impact the offspring. These mistakes, known as mutations, are exceedingly rare – one estimate from humans (Nachman Crowell) suggests that they occur on average at a rate of 2.5 x 10-9 mutations per nucleotide site per generation. This means that on average site a particular site in the human genome has a mutation less than once in every 10,000,000 generations. However, mutations occur in a random manner AND there are a lot of sites in the human genome – some 3,200,000,000 in total. This leads to a bit of a paradox: even though the odds of a mutation occurring at a particular site in the genome for any given individual are extremely low, there are so many sites that all individuals have a small number of mutations in comparison to their parents. For example, a typical human baby has a couple of dozen sites that differ from the corresponding site in their parent due to a mutation that occurred in that parent’s gamete cells. Most of the time these mutations are benign because they either occur in parts of the genome that are not associated with function or because, if they occur in a gene that makes a protein, they occur in a redundant nucleotide base that does not change the amino acid produced. Rarely, these mutations do occur in a protein coding gene and do change the amino acid that is produced by the protein. In this case a new allele is introduced into the population and natural selection can act to change its frequency.</p>
+<p>ACTIVITY – given the sequence that was translated from DNA to RNA to Amino acids after 3.1, induce a mutation in a particular spot. Does this mutation change the Amino acid? How so?</p>
+</div>
+<div id="synonymous-versus-non-synonymous-genetic-variation" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Synonymous versus non-synonymous genetic variation</h2>
+<p>Mutations that introduce new alleles into a population are the raw materials from which natural selection acts upon to cause evolutionary change. For most populations of a given species, the process of mutation acting over time has produced more than one sequence of DNA nucleotide bases at a given genetic locus. These variants are referred to as alleles; each allele is a slightly different version of a given gene. Many times, the variants are not functionally different because the mutations occur in redundant positions in the codon. Such variants are referred to as synonymous variants because the amino acids that are produced are ultimately the same. Conversely, if a mutation occurs in a nucleotide base that does lead to a new amino acid, such changes are known as non-synonymous. In these cases, the resulting protein will be different. The likely result of non-synonymous change is a version of the protein that is no better than the version that exists in the population, although rarely the random process of mutation will lead to an improved version of the protein. An individual that lucks into an improved version of a protein may ultimately have more offspring than it otherwise would have had because it confers some advantages to the individual. For example, the improved version of the protein could enable that individual to extract more energy from a food resource. Over many generations, the increase in reproductive success for individuals that have the improved version of the protein would lead to an increase in the frequency of the allele that produced this version of the protein. Over time, evolutionary change will occur.</p>
+<p>ACTIVITY – given the sequence that was translated from DNA to RNA to Amino acids after 3.1, we will introduce 100 independent mutations by changing a nucleotide base pair chosen at random to one of the other three nucleotides. Can you predict, based on your knowledge of the genetic code, what proportion of these will lead to non-synonymous changes?</p>
+</div>
+<div id="probabilities-snps-and-genetic-variation" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Probabilities, SNPs, and genetic variation</h2>
+<p>The genetic variation of any species describes how many copies of alleles are present in a particular locus, averaged over all of the loci in the genome. Geneticists have developed many statistics that quantify genetic variation. For example, average heterozygosity describes the proportion of individuals in a population that have two copies of an allele in the average locus in their genome. Since each individual (at least in a diploid species) gets one copy of an allele from their mother and one from their father, individuals who inherit different versions from each parent are referred to as heterozygotes because they get different copies of the zygote from each parent. An individual who inherits the same copy is referred to as a homozygote. In addition to heterozygosity, there are other measures of population variation. The most basic is simply to count the number of sites in the aligned set of DNA nucleotide sequences sampled from some population that have more than one nucleotide present that population. These sites, known as Single Nucleotide Polymorphisms, or SNPs for short, can be reported either as a count or as a proportion of sites in the sequence that are variable. Other metrics, such as nucleotide polymorphism (abbreviated at ), measure the expected proportion of variable sites in a sequence of a particular length sampled a function of the sample size.</p>
+<p>Regardless of the metric used, all measures of genetic variation are influenced by a relationship between the rate of mutation and the number of individuals in the population. Essentially, larger populations are expected to have more genetic variation than smaller populations because there are more opportunities for mutations to occur. However, changes in population size influence this amount of apparent genetic diversity. Populations that start small and grow rapidly often have less genetic diversity than we might expect due to census sizes alone. For example, human genetic diversity is more characteristic of a population of size 10,000 than our actual size of seven or so billion individuals because the number of humans on the planet was very small prior to the agricultural revolution. On the other hand, large populations that are suddenly reduced in size will lose genetic variation if individuals carrying a given variant do not leave offspring.</p>
+<p>In section 3.2 we introduced a concept known as the mutation rate to describe the average rate at which mutations lead to the introduction of new alleles in the population. In most species this rate is quite low, for example 2.5 x 10-9 mutations per site per generation estimated for humans. When a natural population is sampled for genetic variation, it may be the case that two or more individuals share a particular variant SNP at a given location in the nucleotide sequence. For example, in a codon where most of the population has a GCC, perhaps two individuals have a GAC. In such cases there are two possible explanations. It could be the case that these individuals each had a parent that independently had a mutation that changed the CA in the second position of the codon. Given a mutation rate of 2.5 x 10-9, the odds that this happens independently is (2.5 x 10-9)2, or 6.25 x 10-18. As an aside, your odds of winning the lottery on the same day that you are struck by lightning and attacked by a shark are much higher than this. Alternatively, these individuals could share the variant SNP because they each inherited this variant from a parent, and their parents inherited the same variant from their parents, etcetera until there is one individual who inherited this variant from parent and passed it along to multiple offspring. This is far more likely to occur – in fact the rough probability is equal to 1 - 6.25 x 10-18 – so much so that we interpret the presence of shared SNP variants as evidence of relatedness when they occur among individuals within species and of common ancestry when they occur between species.</p>
+<p>ACTIVITY – given the DNA sequence alignment shown here, calculate the heterozygosity and the average number of SNPs per 100 nucleotide bases.</p>
+</div>
+<div id="modeling-sequence-variation" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Modeling sequence variation</h2>
+<p>Genetic variation can be used for a wide range of applications, including many that you will be introduced to in later chapters. In turn many of these applications rely on some quantification of the genetic differences among individuals, for example by counting the proportion of variant bases between any pair of individuals. However, because some types of changes are less likely than others it may be the case that a simple count does not represent the actual degree of difference between individuals accurately. For example, due to the chemical structure of the DNA molecule, mutations that replace one purine with another purine or one pyrimidine with another pyrimidine are about twice as likely as a mutation that replaces a purine with a pyrimidine or a pyrimidine with a purine. The former (i.e., like replaced with like) are known as transitions while the latter (i.e., purine replaced with pyrimidine) are known as transversions. In addition, there are some locations in the sequence that are far more important to the functionality of the synthesized protein than others. For example, mutations in the first codon position are rarer than those in the third codon position because the former always lead to a new amino acid. In addition, the three-dimensional structure of the protein can influence how important a give position in the amino acid sequence is to the overall function of the protein. For this reason, the nucleotide sites in a gene sequence effectively have varying rates of one nucleotide base being substituted for another.</p>
+<p>In order to measure genetic distances among individuals accurately, geneticists have developed models of DNA substitution that should be applied when analyzing sequence variation. For example, many models start with estimates of the DNA base composition, the ratio of transitions to transversions (Ti/Tv ratio), and the proportion of sites in the sequence that do not vary (proportion of invariant sites or ‘pinvar’). To see how these may chance the inferred distance among individuals, complete the exercise that follows this section.</p>
+<p>ACTIVITY – the DNA alignment from four individuals sampled from the same population is shown here. Compare the evolutionary distances among individuals accounting for base composition, the Ti/Tv ratio, and pinvar.</p>
+</div>
+<div id="organellar-genomes-and-barcoding-genes" class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Organellar genomes and barcoding genes</h2>
+<p>By far the largest complement of DNA in Eukaryotic organisms is contained in the nuclear genome. For example, most humans have 23 pairs of chromosomes that collectively contain the approximately 3.2 billion nucleotide base pairs. However, Eukaryotes also contain small amounts of DNA in extranuclear organelles. For example, green plants have chloroplasts which are vital in the production of energy via photosynthesis, and plants, animals, and fungi contain mitochondria which are essential for respiration and energy production. In many ways, organellar DNA are easier for geneticists to work with because there can be dozens of organelles in a single cell, each with its own copy of DNA. When DNA is extracted from a tissue sample that contain some number of cells, there are thus many more copies of a given organellar gene than there would be for a given gene from the nuclear genome. This makes these genes easier to work with, particularly with older sequencing technologies. In addition, because these organelles are the parts of the cell that are responsible for respiration, oxidative damage can lead rates DNA mutation that may be an order of magnitude higher than in the nuclear genome. For certain types of questions, having more genetic variation in a sample can be useful. As a result of the fact that organellar genes were easier to sequence with the original sequencing technologies and often have more genetic variation, the phylogatR database has a disproportional number of genes from the mitochondria in animals and the chloroplast in plants.</p>
+<p>Some genes in organellar genomes evolve so quickly that each species is likely to have a unique sequence of nucleotide bases. This fact has led to the proposal that species can be identified by using this unique sequence as a sort of DNA-based barcode, similar to how every item at the grocery store has a unique barcode that is used for identification in the checkout. While academic debate is ongoing about the degree to which DNA barcodes can be applied, the possibility is tantalizing. For example, a comprehensive database of DNA barcodes could be invaluable for species identification used in the tracking of invasive species or to detect smuggling of endangered species or for use with the monitoring of environmental DNA.</p>
+</div>
+<div id="practice" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Practice</h2>
+<p>Syndey is creating a ShinyR app to estimate base composition and maybe something else that is simple.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="biodiversity-databases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
