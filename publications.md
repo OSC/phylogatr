@@ -7,7 +7,7 @@ title: Publications
 
 | Date  | Author  | Title |
 | :----  | :-----  | :------ |
-| 2022  | Parsons, Pelletier, Wieringa, Duckett & Carstens  | Analysis of biodiversity data suggest that mammal species are hidden in predictable places. [*in press*] |
+| 2022  | Parsons, Pelletier, Wieringa, Duckett & Carstens  | [Analysis of biodiversity data suggest that mammal species are hidden in predictable places](https://www.pnas.org/doi/abs/10.1073/pnas.2103400119) |
 | 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566) |
 | 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382) |
 
