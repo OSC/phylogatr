@@ -354,13 +354,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>All the sequences for each individual for a location in the genome are aligned so they can be compared. We can plot the data from the DNA sequence alignments for visualization using the code below. Teh different colors represent different bases (A,T,G, and C) where each column is a different nucleotide and each individual is on a different row.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="dna.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plot data</span></span>
 <span id="cb15-2"><a href="dna.html#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(S.pal)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-8-1.png" width="672" /></p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="dna.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(S.mon)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-8-2.png" width="672" /></p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="dna.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(S.cin)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-8-3.png" width="672" /></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="dna.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(S.ben)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-8-4.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-8-4.png" width="672" /></p>
 <p>Finally, let’s estimate the composition of base pairs present in each of our alignments. This will tell us the frequency at which each base is present in the genetic data for our chosen species. Then, we can plot these values using a bar chart, and visually compare base pair frequencies for each species.</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="dna.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Estimate base pair composition</span></span>
 <span id="cb19-2"><a href="dna.html#cb19-2" aria-hidden="true" tabindex="-1"></a>S.paldnabin <span class="ot">&lt;-</span> <span class="fu">concatenate</span>(S.pal)</span>
@@ -390,7 +390,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb27-5"><a href="dna.html#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(S.monvar[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">15</span>,<span class="dv">16</span>)], <span class="at">col=</span>colors, <span class="at">xlab=</span><span class="st">&quot;Nucleotide&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Frequency&quot;</span>, <span class="at">main =</span><span class="fu">names</span>(S.mon<span class="sc">@</span>dna))</span>
 <span id="cb27-6"><a href="dna.html#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(S.cinvar[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">15</span>,<span class="dv">16</span>)], <span class="at">col=</span>colors, <span class="at">xlab=</span><span class="st">&quot;Nucleotide&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Frequency&quot;</span>, <span class="at">main =</span><span class="fu">names</span>(S.cin<span class="sc">@</span>dna))</span>
 <span id="cb27-7"><a href="dna.html#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(S.benvar[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">15</span>,<span class="dv">16</span>)], <span class="at">col=</span>colors, <span class="at">xlab=</span><span class="st">&quot;Nucleotide&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Frequency&quot;</span>, <span class="at">main =</span><span class="fu">names</span>(S.ben<span class="sc">@</span>dna))</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 </div>
 <div id="organellar-genomes-and-barcoding-genes" class="section level2 hasAnchor" number="3.6">
