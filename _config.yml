@@ -20,7 +20,8 @@ logo: /assets/images/logo.png
 description: >- # this means to ignore newlines until "baseurl:"
   **phylo**geographic data aggre**gat**ion and **r**epurposing 
 callout: |
-  [Launch PhylogatR Database](https://phylogatr.osc.edu)\n\
+  [**Launch PhylogatR Database**](https://phylogatr.osc.edu)\
+  
   First time users: follow these [instructions]() to create a free account. 
 cite: | # line breaks preserved
   This material is based upon work supported by the [National Science Foundation](https://www.nsf.gov/) under grant numbers [1910623](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1910623) and [1911293](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1911293&HistoricalAwards=false)
