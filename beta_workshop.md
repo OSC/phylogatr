@@ -43,4 +43,4 @@ Stephanie Crouch
 
 Current beta-testers can reach the phylogatR database [here](https://phylogatr.osc.edu).
 
-To ask questions or report bugs, please visit our [Discourse](https://discourse.osc.edu/c/phylogatr/45).
+**To ask questions or report bugs, please send a message to Phylogatr@lists.osu.edu and include the alignment name (Genus-species-gene), number(s) of the problematic accession(s), and a short description of the issue.**
