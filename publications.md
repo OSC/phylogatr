@@ -12,4 +12,4 @@ title: Publications
 | 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382) |
 
 **The suggested citation for *PhylogatR* is:**
->Tara Pelletier, Danielle Parsons, Sydney Decker, Stephanie Crouch, Eric Franz, Jeffrey Ohrstrom, Bryan Carstens. 2022. *PhylogatR: Phylogeographic data aggregation and repurposing*. Molecular Ecology Resources. [*In revision*]
+>Tara Pelletier, Danielle Parsons, Sydney Decker, Stephanie Crouch, Eric Franz, Jeffrey Ohrstrom, Bryan Carstens. 2022. *PhylogatR: Phylogeographic data aggregation and repurposing*. Molecular Ecology Resources. [https://doi.org/10.1111/1755-0998.13673](https://doi.org/10.1111/1755-0998.13673)
