@@ -25,8 +25,8 @@ Submit corrections to GBIF occurrence data by clicking the speech bubble icon in
 
 - [Bryan Carstens](https://carstenslab.osu.edu/index.html)
 - [Tara Pelletier](https://sites.google.com/site/taraapelletier/)
-- Danielle Parsons
-- Sydney Decker
+- [Danielle Parsons](https://www.daniellejparsons.com)
+- [Sydney Decker](https://skdecker.wixsite.com/home/)
 - Eric Franz
 - Jeffrey Ohrstrom
 - Shameema Ookital
