@@ -34,9 +34,10 @@ Stephanie Crouch
 
 | Project  | Team  | About |
 | :----  | :-----  | :------ |
-| Salamander hidden diversity | [Tara Pelletier](https://sites.google.com/site/taraapelletier/), [Danielle Parsons](https://www.daniellejparsons.com), Abbi Green, & [Bryan Carstens](https://carstenslab.osu.edu/index.html)  | This project aims to determine which species contain hidden diversity, and to cross-reference these results with a variety of geographical, environmental, and other variables. |
+| Salamander hidden diversity | Tara Pelletier, Danielle Parsons, Abbi Green, & Bryan Carstens  | This project aims to identify hidden diversity, and to cross-reference these results with a variety of geographical, environmental, and life history variables. |
 | Global fish demographic history  | Justin Bagley, Christian Braswell, Macee Glick, Kayla Morrow, Rachel Bonner, Fernando Alda, William Hanson-Regan, Kevin J. O'Malley, Mackenzie Smith, Diego Elias, & Chantal Elyse Parker | This project is carrying out a comparative demographic analysis of freshwater and marine fishes worldwide. |
-| Tropical-temperate gradients  | Chaz Hyseni, Camilo Calderón-Acevedo, Marcelo Gehara, Isaac Overcast  | This project is testing tropical-temperate gradients of species and genetic diversity across the rugged landscapes of the American Cordillera |
+| Tropical-temperate gradients  | Chaz Hyseni, Camilo Calderón-Acevedo, Marcelo Gehara, & Isaac Overcast  | This project is testing tropical-temperate gradients of species and genetic diversity across the rugged landscapes of the American Cordillera |
+| Ecological divergence in bats  | Camilo Calderón-Acevedo, Angelo Soto-Centeno, Abbi Green, & Tara Pelletier  | This project is examining environmetnal correlates of bat diversity |
 
 
 ## For beta-testers
