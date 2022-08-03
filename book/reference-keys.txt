@@ -113,3 +113,5 @@ generalized-mixed-yule-coalescent-gmyc
 species-delimitation
 evaluate-your-results
 bonus-are-my-results-supported
+image-of-mt-genome---danielle
+practice-calculate-the-proportion-of-single-base-pair-mutations-that-are-synonymous
