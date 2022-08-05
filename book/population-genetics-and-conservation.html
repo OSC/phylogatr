@@ -357,7 +357,7 @@ You will need to create an account to download data.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="population-genetics-and-conservation.html#cb5-1" aria-hidden="true" tabindex="-1"></a>assessments <span class="ot">&lt;-</span> assessments[,<span class="dv">3</span><span class="sc">:</span><span class="dv">4</span>]</span></code></pre></div>
 <p>Create a plot to look at the distribution of red listings in this group.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="population-genetics-and-conservation.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(assessments, <span class="fu">aes</span>(<span class="at">x=</span>redlistCategory, <span class="at">fill=</span>redlistCategory)) <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span> <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Paired&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.title.x=</span><span class="fu">element_blank</span>(), <span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">25</span>))</span></code></pre></div>
-<p><img src="_main_files/figure-html/title-iucn-1.png" width="672" /></p>
+<p><img src="images/title-iucn-1.png" width="672" /></p>
 <p>We can also view these in a table.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="population-genetics-and-conservation.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(assessments<span class="sc">$</span>redlistCategory)</span></code></pre></div>
 <pre><code>## 
@@ -437,7 +437,7 @@ You will need to create an account to download data.</p>
 <span id="cb17-2"><a href="population-genetics-and-conservation.html#cb17-2" aria-hidden="true" tabindex="-1"></a>mean_pi <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(dataset<span class="sc">$</span>pi, <span class="fu">list</span>(dataset<span class="sc">$</span>redlistCategory), mean, <span class="at">na.rm=</span>T)</span>
 <span id="cb17-3"><a href="population-genetics-and-conservation.html#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-4"><a href="population-genetics-and-conservation.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(mean_pi, <span class="fu">aes</span>(<span class="at">x =</span> Group<span class="fl">.1</span>, <span class="at">y =</span> x, <span class="at">fill =</span> Group<span class="fl">.1</span>)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">&quot;identity&quot;</span>) <span class="sc">+</span> <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">&quot;Paired&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.title.x=</span><span class="fu">element_blank</span>(), <span class="at">legend.position =</span> <span class="st">&quot;none&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">25</span>)) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;nucleotide diversity (pi)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/title-pi-1.png" width="672" /></p>
+<p><img src="images/title-pi-1.png" width="672" /></p>
 <p>Now we can test whether there is a significant difference in nucleotide diversity between those species that are threatened and those that are not. A t-test compares two groups so first we’ll group categories into threatened and not-threatened and call them as such. We’ll remove the data deficient species (notice we are overwriting the <code>dataset</code> object and it will no longer contain the data deficient assessments).</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="population-genetics-and-conservation.html#cb18-1" aria-hidden="true" tabindex="-1"></a>dataset<span class="ot">&lt;-</span>dataset[<span class="sc">!</span>(dataset<span class="sc">$</span>redlistCategory<span class="sc">==</span><span class="st">&quot;Data Deficient&quot;</span>),]</span>
 <span id="cb18-2"><a href="population-genetics-and-conservation.html#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -472,7 +472,10 @@ You will need to create an account to download data.</p>
 </div>
 <div id="click-and-play" class="section level2 hasAnchor" number="5.4">
 <h2><span class="header-section-number">5.4</span> Click and play!<a href="population-genetics-and-conservation.html#click-and-play" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<iframe src="https://djparsons.shinyapps.io/App-1-conservation-DEMO/?showcase=0" width="750" height="700">
+<iframe src="https://djparsons.shinyapps.io/App-1-conservation-DEMO/">
+<iframe src="https://djparsons.shinyapps.io/App-1-conservation-DEMO/?showcase=0" width="672" height="400px" data-external="1">
+</iframe>
+<iframe src="https://sites.google.com/site/taraapelletier/" width="672" height="400px" data-external="1">
 </iframe>
 
 </div>
