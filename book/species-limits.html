@@ -460,7 +460,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb15-7"><a href="species-limits.html#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#plot tree and support values (</span><span class="al">NOTE</span><span class="co">: run both these lines of code at the same time)</span></span>
 <span id="cb15-8"><a href="species-limits.html#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mcc_tree, <span class="at">cex=</span>.<span class="dv">6</span>, <span class="at">no.margin=</span><span class="cn">TRUE</span>)         </span>
 <span id="cb15-9"><a href="species-limits.html#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">nodelabels</span>(<span class="fu">round</span>(yule_support, <span class="dv">2</span>), <span class="at">cex=</span>.<span class="dv">7</span>)     </span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-14-1.png" width="672" /></p>
 <p>We can also look at how our delimited species are spread geographically. Run the code below to combine your GMYC delimitation results with their associated geographic occurrence data to visualize how your species are spread across the globe. In the resulting figure, each delimited species is assigned a to a unique color and individuals are plotted according to their collection locality.</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="species-limits.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#load required packages</span></span>
 <span id="cb16-2"><a href="species-limits.html#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tools)</span>
@@ -495,7 +495,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb19-14"><a href="species-limits.html#cb19-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">&quot;GMYC Species Delimitation Results&quot;</span>)<span class="sc">+</span></span>
 <span id="cb19-15"><a href="species-limits.html#cb19-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> merge, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.numeric</span>(longitude), <span class="at">y =</span> <span class="fu">as.numeric</span>(latitude), <span class="at">color =</span> <span class="fu">factor</span>(GMYC_spec)), <span class="at">size =</span> <span class="fl">0.3</span>)<span class="sc">+</span></span>
 <span id="cb19-16"><a href="species-limits.html#cb19-16" aria-hidden="true" tabindex="-1"></a> <span class="fu">labs</span>(<span class="at">color =</span> <span class="st">&quot;GMYC species&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p><img src="images/unnamed-chunk-18-1.png" width="672" /></p>
 
 </div>
 </div>
