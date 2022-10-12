@@ -15,6 +15,9 @@ layout: default
 
 Patterns of genetic diversity within species contain information about the history of the species, including how it responded to historical climate change and the degree of isolation of its populations. For this reason, thousands of scientific projects have been funded by federal agencies with the goal of investigating the genetic diversity within a particular focal species. The data from these efforts, including the genetic data collected from a given specimen and the physical location from which that specimen was collected, are a valuable resource and typically are made available to other researchers upon publication of the study. However, since different types of data are stored in different databases, it can be difficult to access and assemble these data for reanalysis. *phylogatR* is a database and web application that (i) aggregates genetic sequence data from GenBank and geographic occurrence data from the Global Biodiversity Information Facility (GBIF), (ii) connects these data at the specimen level, and (iii) provides customized web-based apps that enable these data to be analyzed in a variety of ways.
 
+![pipeline](/assets/images/pipeline.jpg)
+*Overview of PhylogatR pipeline (from [Pelletier et al. 2022](https://doi.org/10.1111/1755-0998.13673))*
+
 **To ask questions or report bugs, please send a message to Phylogatr@lists.osu.edu and include the alignment name (Genus-species-gene), number(s) of the  problematic accession(s), and a short description of the issue.**
 
 Submit corrections to GenBank sequence data by sending an error report to [update@ncbi.nlm.nih.gov](update@ncbi.nlm.nih.gov).
