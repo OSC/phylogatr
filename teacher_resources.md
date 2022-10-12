@@ -7,7 +7,9 @@ title: Teacher Resources
 
 We are currently developing a *PhylogatR* companion book as well as educational modules for use in secondary and college level classes. Modules will support interactive analysis of *PhylogatR* data through R Shiny applications and include documentation for educators to facilitate classroom use and ensure specific learning objectives are met.
 
-**You can access a working draft of the *PhylogatR* book [here](https://phylogatr.org/book/index.html).** Educational modules can be accessed below.
+**You can access a working draft of the *PhylogatR* book [here](https://phylogatr.org/book/index.html).** 
+
+Working drafts of our educational modules can be accessed below.
 
 | Module  | Purpose  | Link  |
 | :----  | :-----  | :------ |
