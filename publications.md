@@ -5,12 +5,15 @@ title: Publications
 
 # Publications
 
-| Date  | Author(s)  | Title |
-| :----  | :-----  | :------ |
-| 2022 | Burbrink | [Uniting genetic and geographic databases to understand the relationship between latitude and population demography](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.13688) |
-| 2022  | Parsons, Pelletier, Wieringa, Duckett & Carstens  | [Analysis of biodiversity data suggest that mammal species are hidden in predictable places](https://www.pnas.org/doi/abs/10.1073/pnas.2103400119) |
-| 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566) |
-| 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382) |
+| Date  | Author(s)  | Title  | Journal |
+|:---- | :-----  | :-----  | :----- |
+| 2023 | Amador, Arroyo-Torres & Barrow | [Machine learning and phylogenetic models identify predictors of genetic variation in Neotropical amphibians](https://doi.org/10.1101/2023.06.15.545105) | bioRxiv [*preprint*]  |
+| 2023 | Fonseca, Pelletier, Decker, Parsons & Carstens | [Pleistocene glaciations caused the latitudinal gradient of within-species genetic diversity](https://doi.org/10.1093/evlett/qrad030) |Evolution Letters |
+| 2023 | Larkin, Myers, Carstens & Barrow | [Predictors of genomic diversity within North American squamates](https://doi.org/10.1093/jhered/esad001) | Journal of Heredity | 
+| 2022 | Burbrink | [Uniting genetic and geographic databases to understand the relationship between latitude and population demography](https://onlinelibrary.wiley.com/doi/10.1111/1755-0998.13688) | Molecular Ecology Resources |
+| 2022  | Parsons, Pelletier, Wieringa, Duckett & Carstens  | [Analysis of biodiversity data suggest that mammal species are hidden in predictable places](https://www.pnas.org/doi/abs/10.1073/pnas.2103400119) | PNAS |
+| 2018 | Pelletier & Carstens | [Geographical range size and latitude predict population genetic structure in a global survey](https://royalsocietypublishing.org/doi/10.1098/rsbl.2017.0566) | Biology Letters |
+| 2018 | Carstens, Morales, Field & Pelletier | [A global analysis of bats using automated comparative phylogeography uncovers a surprising impact of Pleistocene glaciation](https://onlinelibrary.wiley.com/doi/abs/10.1111/jbi.13382) | Journal of Biogeography |
 
 ### The suggested citation for *phylogatR* is:
 >Tara Pelletier, Danielle Parsons, Sydney Decker, Stephanie Crouch, Eric Franz, Jeffrey Ohrstrom, Bryan Carstens. 2022. *PhylogatR: Phylogeographic data aggregation and repurposing*. Molecular Ecology Resources. [https://doi.org/10.1111/1755-0998.13673](https://doi.org/10.1111/1755-0998.13673)
