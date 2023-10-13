@@ -7,6 +7,7 @@ title: Publications
 
 | Date  | Author(s)  | Title  | Journal |
 |:---- | :-----  | :-----  | :----- |
+| 2023 | Bharti, Pawar, Edgecombe & Joshi | [Genetic diversity varies with species traits and latitude in predatory soil arthropods (Myriapoda: Chilopoda)](https://dx.doi.org/10.1111/geb.13709) | Global Ecology and Biogeography |
 | 2023 | Amador, Arroyo-Torres & Barrow | [Machine learning and phylogenetic models identify predictors of genetic variation in Neotropical amphibians](https://doi.org/10.1101/2023.06.15.545105) | bioRxiv [*preprint*]  |
 | 2023 | Fonseca, Pelletier, Decker, Parsons & Carstens | [Pleistocene glaciations caused the latitudinal gradient of within-species genetic diversity](https://doi.org/10.1093/evlett/qrad030) |Evolution Letters |
 | 2023 | Larkin, Myers, Carstens & Barrow | [Predictors of genomic diversity within North American squamates](https://doi.org/10.1093/jhered/esad001) | Journal of Heredity | 
