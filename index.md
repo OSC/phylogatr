@@ -36,3 +36,5 @@ Submit corrections to GBIF occurrence data by clicking the speech bubble icon in
 - Trey Dockendorf
 - Samir Mansour
 
+### The suggested citation for *phylogatR* is:
+>Tara A. Pelletier, Danielle J. Parsons, Sydney K. Decker, Stephanie Crouch, Eric Franz, Jeffrey Ohrstrom, Bryan C. Carstens. 2022. *PhylogatR: Phylogeographic data aggregation and repurposing*. Molecular Ecology Resources. [https://doi.org/10.1111/1755-0998.13673](https://doi.org/10.1111/1755-0998.13673)
