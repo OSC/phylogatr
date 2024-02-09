@@ -3,9 +3,9 @@ layout: default
 title: Presentations
 ---
 
-# Presentations -> *currently under construction*
+# Presentations -> *currently under construction* <span style='font-size:100px;'>&#128679;</span>
 
-## Posters
+## Posters 
 | Date  | Author(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2023 | Parsons, Decker, Pelletier & Carstens | <a href="assets/pdfs/osc_2023.pdf" target="_blank">PhylogatR: phylogeographic data aggregation and repurposing </a> | iDigBio Digital Data Conference (*Tempe, AZ*) |
