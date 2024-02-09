@@ -6,6 +6,7 @@ title: Presentations
 # Presentations -> *currently under construction* <span style='font-size:100px;'>&#128679;</span>
 
 ## Posters 
+
 | Date  | Author(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2023 | Parsons, Decker, Pelletier & Carstens | <a href="assets/pdfs/osc_2023.pdf" target="_blank">PhylogatR: phylogeographic data aggregation and repurposing </a> | iDigBio Digital Data Conference (*Tempe, AZ*) |
@@ -15,6 +16,7 @@ title: Presentations
 | 2022 | Green & Pelletier | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
 
 ## Talks
+
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2023 | Parsons, Pelletier, Wieringa, Duckett & Carstens | <a href="assets/pdfs/asm_2023.pdf" target="_blank">Mammal species are hidden in predictable places </a> | American Society of Mammalogists Meeting (*Tucson, AZ*) |
@@ -22,6 +24,7 @@ title: Presentations
 | 2022 | Pelletier | coming soon | coming soon |
 
 ## Workshops
+
 | Date  | Host(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2022 | Pelletier, Parsons & Carstens | [PhylogatR: phylogeographic data aggregation and  repurposing](https://www.evolutionmeetings.org/uploads/4/8/8/0/48804503/2022.pdf) | Evolution Meeting (*Cleveland, OH*)  |
