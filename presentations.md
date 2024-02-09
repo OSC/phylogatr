@@ -18,6 +18,8 @@ title: Presentations
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2023 | Parsons, Pelletier, Wieringa, Duckett & Carstens | <a href="assets/pdfs/asm_2023.pdf" target="_blank">Mammal species are hidden in predictable places </a> | American Society of Mammalogists Meeting (*Tucson, AZ*) |
+| 2022 | Decker & Carstens | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
+| 2022 | Pelletier | coming soon | coming soon |
 
 ## Workshops
 | Date  | Host(s)  | Title  | Event |
