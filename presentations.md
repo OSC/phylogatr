@@ -3,30 +3,24 @@ layout: default
 title: Presentations
 ---
 
-# Presentations
+# Presentations -> *currently under construction*
 
 ## Posters
-
 | Date  | Author(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
-| 2024 | Amador, Arroyo-Torres & Barrow | [Machine learning and phylogenetic models identify predictors of genetic variation in Neotropical amphibians](https://doi.org/10.1111/jbi.14795) | Journal of Biogeography  |
-| 2023 | Bharti, Pawar, Edgecombe & Joshi | [Genetic diversity varies with species traits and latitude in predatory soil arthropods (Myriapoda: Chilopoda)](https://dx.doi.org/10.1111/geb.13709) | Global Ecology and Biogeography |
-| 2023 | Fonseca, Pelletier, Decker, Parsons & Carstens | [Pleistocene glaciations caused the latitudinal gradient of within-species genetic diversity](https://doi.org/10.1093/evlett/qrad030) |Evolution Letters |
+| 2023 | Parsons, Decker, Pelletier & Carstens | <a href="assets/pdfs/osc_2023.pdf" target="_blank">PhylogatR: phylogeographic data aggregation and repurposing </a> | iDigBio Digital Data Conference (*Tempe, AZ*) |
+| 2023 | Parsons, Decker, Pelletier & Carstens | <a href="assets/pdfs/osc_2023.pdf" target="_blank">PhylogatR: phylogeographic data aggregation and repurposing </a> | Ohio Supercomputer Center Conference (*Columbus, OH*) |
+| 2022 | Pelletier, Parsons, Decker & Crouch | <a href="assets/pdfs/aacu_2022.pdf" target="_blank">Biodiversity informatics in the classroom: blending biology and computer science using real data via open-source repositories</a> | American Association of Colleges and Universities Conference (*Washington, DC*) |
+| 2022 | Green & Pelletier | coming soon | Evolution Meeting (*Cleveland, OH*)  |
+| 2022 | Green & Pelletier | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
 
 ## Talks
-
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
-| 2024 | Amador, Arroyo-Torres & Barrow | [Machine learning and phylogenetic models identify predictors of genetic variation in Neotropical amphibians](https://doi.org/10.1111/jbi.14795) | Journal of Biogeography  |
-| 2023 | Bharti, Pawar, Edgecombe & Joshi | [Genetic diversity varies with species traits and latitude in predatory soil arthropods (Myriapoda: Chilopoda)](https://dx.doi.org/10.1111/geb.13709) | Global Ecology and Biogeography |
+| 2023 | Parsons, Pelletier, Wieringa, Duckett & Carstens | <a href="assets/pdfs/asm_2023.pdf" target="_blank">Mammal species are hidden in predictable places </a> | American Society of Mammalogists Meeting (*Tucson, AZ*) |
 
 ## Workshops
-
 | Date  | Host(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
-| 2024 | Amador, Arroyo-Torres & Barrow | [Machine learning and phylogenetic models identify predictors of genetic variation in Neotropical amphibians](https://doi.org/10.1111/jbi.14795) | Journal of Biogeography  |
-| 2023 | Bharti, Pawar, Edgecombe & Joshi | [Genetic diversity varies with species traits and latitude in predatory soil arthropods (Myriapoda: Chilopoda)](https://dx.doi.org/10.1111/geb.13709) | Global Ecology and Biogeography |
-
-
-### The suggested citation for *phylogatR* is:
->Tara A. Pelletier, Danielle J. Parsons, Sydney K. Decker, Stephanie Crouch, Eric Franz, Jeffrey Ohrstrom, Bryan C. Carstens. 2022. *PhylogatR: Phylogeographic data aggregation and repurposing*. Molecular Ecology Resources. [https://doi.org/10.1111/1755-0998.13673](https://doi.org/10.1111/1755-0998.13673)
+| 2022 | Pelletier, Parsons & Carstens | [PhylogatR: phylogeographic data aggregation and  repurposing](https://www.evolutionmeetings.org/uploads/4/8/8/0/48804503/2022.pdf) | Evolution Meeting (*Cleveland, OH*)  |
+| 2022 | Pelletier, Decker, Moshier, Green & Carstens | [PhylogatR: phylogeographic data aggregation and  repurposing](needsLINK) | NA Society for Bat Research Conference (*Austin, TX*) |
