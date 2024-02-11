@@ -5,7 +5,7 @@ title: Presentations
 
 # Presentations -> *currently under construction* <span style='font-size:100px;'>&#128679;</span>
 
-## Posters 
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chart-area.svg" width="40" height="40"> &nbsp; Posters 
 
 | Date  | Author(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
@@ -16,7 +16,7 @@ title: Presentations
 | 2022 | **Green** & Pelletier | coming soon | Evolution Meeting (*Cleveland, OH*)  |
 | 2022 | **Green** & Pelletier | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
 
-## Talks
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chalkboard-user.svg" width="40" height="40"> &nbsp; Talks
 
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
@@ -24,7 +24,7 @@ title: Presentations
 | 2022 | **Decker** & Carstens | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
 
 
-## Workshops
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/screwdriver-wrench.svg" width="40" height="40"> &nbsp; Workshops
 
 | Date  | Host(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
