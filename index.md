@@ -9,7 +9,7 @@ layout: default
 
 ## *phylogatR*
 
-*phylogatR* brings together genetic data with georeferenced specimen records that are analysis-ready. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the *phylogatR* team. *phylogatR* supports both professional biologists and educational modules intended for secondary or college classes.
+*PhylogatR* brings together genetic data with georeferenced specimen records that are analysis-ready. Analysis of these data can be conducted on the Ohio Supercomputer using R scripts or R Shiny apps provided by the *phylogatR* team. *phylogatR* supports both professional biologists and educational modules intended for secondary or college classes.
 
 ## How *phylogatR* Works
 
@@ -18,11 +18,11 @@ Patterns of genetic diversity within species contain information about the histo
 ![pipeline](/assets/images/pipeline.jpg)
 *Overview of PhylogatR pipeline (from [Pelletier et al. 2022](https://doi.org/10.1111/1755-0998.13673))*
 
-**To ask questions or report bugs, please send a message to Phylogatr@lists.osu.edu and include the alignment name (Genus-species-gene), number(s) of the  problematic accession(s), and a short description of the issue.**
+**To ask questions or report bugs, please send a message to [Phylogatr@lists.osu.edu](mailto:Phylogatr@lists.osu.edu) and include the alignment name (Genus-species-gene), number(s) of the  problematic accession(s), and a short description of the issue.**
 
-Submit corrections to GenBank sequence data by sending an error report to [update@ncbi.nlm.nih.gov](update@ncbi.nlm.nih.gov).
+&emsp; <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/dna.svg" width="27" height="27"> &nbsp; Submit corrections to GenBank sequence data by sending an error report to [update@ncbi.nlm.nih.gov](update@ncbi.nlm.nih.gov).
 
-Submit corrections to GBIF occurrence data by clicking the speech bubble icon in the upper right corner of the [GBIF website](https://www.gbif.org).
+&emsp; <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/earth-americas.svg" width="27" height="27"> &nbsp; Submit corrections to GBIF occurrence data by clicking the speech bubble icon in the upper right corner of the [GBIF website](https://www.gbif.org).
 
 ## Project Team
 
