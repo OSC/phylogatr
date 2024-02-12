@@ -21,7 +21,11 @@ title: Presentations
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
 | 2023 | **Parsons**, Pelletier, Wieringa, Duckett & Carstens | <a href="assets/pdfs/asm_2023.pdf" target="_blank">Mammal species are hidden in predictable places </a> | American Society of Mammalogists Meeting (*Tucson, AZ*) |
-| 2022 | **Decker** & Carstens | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
+| 2023 | **Carstens** | Artificially Intelligent research in Biodiversity Science | Michigan State University (*East Lansing, MI*) |
+| 2022 | **Decker**, Provost & Carstens | Identifying the factors influencing phylogeographic breaks in bats and other taxa | NA Society for Bat Research Conference (*Austin, TX*) |
+| 2022 | **Carstens** | Predictive Biodiversity Science | Ohio University (*Athens, OH*) |
+| 2022 | **Carstens** | Predictive Biodiversity Science | Miami University (*Oxford, OH*) |
+
 
 # <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/screwdriver-wrench.svg" width="40" height="40"> &nbsp; Workshops
 
