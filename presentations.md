@@ -5,7 +5,7 @@ title: Presentations
 
 # *This page is currently under construction!* <span style='font-size:100px;'>&#128679;</span>
 
-# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chart-area.svg" width="40" height="40"> &nbsp; Posters 
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chart-area.svg" width="30" height="30"> &nbsp; Posters 
 
 | Date  | Author(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
@@ -16,7 +16,7 @@ title: Presentations
 | 2022 | **Green** & Pelletier | coming soon | Evolution Meeting (*Cleveland, OH*)  |
 | 2022 | **Green** & Pelletier | coming soon | NA Society for Bat Research Conference (*Austin, TX*) |
 
-# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chalkboard-user.svg" width="40" height="40"> &nbsp; Talks
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/chalkboard-user.svg" width="30" height="30"> &nbsp; Talks
 
 | Date  | Speaker(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
@@ -27,7 +27,7 @@ title: Presentations
 | 2022 | **Carstens** | Predictive Biodiversity Science | Miami University (*Oxford, OH*) |
 
 
-# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/screwdriver-wrench.svg" width="40" height="40"> &nbsp; Workshops
+# <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/screwdriver-wrench.svg" width="30" height="30"> &nbsp; Workshops
 
 | Date  | Host(s)  | Title  | Event |
 |:---- | :-----  | :-----  | :----- |
